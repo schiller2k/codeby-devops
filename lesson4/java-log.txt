@@ -1,0 +1,20 @@
+Script started on 2024-07-17 11:29:51+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ java - version
+[?2004lopenjdk version "17.0.11" 2024-04-16
+OpenJDK Runtime Environment (build 17.0.11+9-Ubuntu-122.04.1)
+OpenJDK 64-Bit Server VM (build 17.0.11+9-Ubuntu-122.04.1, mixed mode, sharing)
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ u[Ksudp [K[Ko u pdate-alternatives --list java
+[?2004l[sudo] password for schiller: 
+/usr/lib/jvm/java-17-openjdk-amd64/bin/java
+/usr/lib/jvm/java-18-openjdk-amd64/bin/java
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ sudo update-alternatives --list java[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ java -version[K[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ [2Pexit
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjava -version[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ sudo update-alternatives --list java[1P java[1P java[1P java[1P javas javae javat java[C[C[C[C[C [7m/usr/lib/jvm/java-18-openjdk-amd64/bin/java[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/usr/lib/jvm/java-18-openjdk-amd64/bin/java
+[?2004lupdate-alternatives: using /usr/lib/jvm/java-18-openjdk-amd64/bin/java to provide /usr/bin/java (java) in manual mode
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ java - ves[Krsion
+[?2004lopenjdk version "18-ea" 2022-03-22
+OpenJDK Runtime Environment (build 18-ea+36-Ubuntu-1)
+OpenJDK 64-Bit Server VM (build 18-ea+36-Ubuntu-1, mixed mode, sharing)
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ exit
+[?2004lexit
+
+Script done on 2024-07-17 11:30:47+00:00 [COMMAND_EXIT_CODE="0"]

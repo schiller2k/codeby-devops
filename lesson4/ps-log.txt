@@ -1,0 +1,424 @@
+Script started on 2024-07-03 12:33:17+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ ps -eF [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[KF
+[?2004lUID          PID    PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+root           1       0  0 42012 12840   8 июл01 ?     00:00:04 /sbin/init s
+root           2       0  0     0     0  11 июл01 ?     00:00:00 [kthreadd]
+root           3       2  0     0     0   0 июл01 ?     00:00:00 [rcu_gp]
+root           4       2  0     0     0   0 июл01 ?     00:00:00 [rcu_par_gp]
+root           5       2  0     0     0   0 июл01 ?     00:00:00 [slub_flushw
+root           6       2  0     0     0   0 июл01 ?     00:00:00 [netns]
+root          11       2  0     0     0   0 июл01 ?     00:00:00 [mm_percpu_w
+root          12       2  0     0     0   0 июл01 ?     00:00:00 [rcu_tasks_k
+root          13       2  0     0     0   0 июл01 ?     00:00:00 [rcu_tasks_r
+root          14       2  0     0     0   1 июл01 ?     00:00:00 [rcu_tasks_t
+root          15       2  0     0     0   0 июл01 ?     00:00:00 [ksoftirqd/0
+root          16       2  0     0     0   1 июл01 ?     00:00:24 [rcu_preempt
+root          17       2  0     0     0   0 июл01 ?     00:00:00 [migration/0
+root          18       2  0     0     0   0 июл01 ?     00:00:00 [idle_inject
+root          19       2  0     0     0   0 июл01 ?     00:00:00 [cpuhp/0]
+root          20       2  0     0     0   1 июл01 ?     00:00:00 [cpuhp/1]
+root          21       2  0     0     0   1 июл01 ?     00:00:00 [idle_inject
+root          22       2  0     0     0   1 июл01 ?     00:00:00 [migration/1
+root          23       2  0     0     0   1 июл01 ?     00:00:00 [ksoftirqd/1
+root          26       2  0     0     0   2 июл01 ?     00:00:00 [cpuhp/2]
+root          27       2  0     0     0   2 июл01 ?     00:00:00 [idle_inject
+root          28       2  0     0     0   2 июл01 ?     00:00:00 [migration/2
+root          29       2  0     0     0   2 июл01 ?     00:00:00 [ksoftirqd/2
+root          31       2  0     0     0   2 июл01 ?     00:00:00 [kworker/2:0
+root          32       2  0     0     0   3 июл01 ?     00:00:00 [cpuhp/3]
+root          33       2  0     0     0   3 июл01 ?     00:00:00 [idle_inject
+root          34       2  0     0     0   3 июл01 ?     00:00:00 [migration/3
+root          35       2  0     0     0   3 июл01 ?     00:00:00 [ksoftirqd/3
+root          37       2  0     0     0   3 июл01 ?     00:00:00 [kworker/3:0
+root          38       2  0     0     0   4 июл01 ?     00:00:00 [cpuhp/4]
+root          39       2  0     0     0   4 июл01 ?     00:00:00 [idle_inject
+root          40       2  0     0     0   4 июл01 ?     00:00:00 [migration/4
+root          41       2  0     0     0   4 июл01 ?     00:00:00 [ksoftirqd/4
+root          44       2  0     0     0   5 июл01 ?     00:00:00 [cpuhp/5]
+root          45       2  0     0     0   5 июл01 ?     00:00:00 [idle_inject
+root          46       2  0     0     0   5 июл01 ?     00:00:00 [migration/5
+root          47       2  0     0     0   5 июл01 ?     00:00:00 [ksoftirqd/5
+root          50       2  0     0     0   6 июл01 ?     00:00:00 [cpuhp/6]
+root          51       2  0     0     0   6 июл01 ?     00:00:00 [idle_inject
+root          52       2  0     0     0   6 июл01 ?     00:00:00 [migration/6
+root          53       2  0     0     0   6 июл01 ?     00:00:00 [ksoftirqd/6
+root          55       2  0     0     0   6 июл01 ?     00:00:00 [kworker/6:0
+root          56       2  0     0     0   7 июл01 ?     00:00:00 [cpuhp/7]
+root          57       2  0     0     0   7 июл01 ?     00:00:00 [idle_inject
+root          58       2  0     0     0   7 июл01 ?     00:00:00 [migration/7
+root          59       2  0     0     0   7 июл01 ?     00:00:00 [ksoftirqd/7
+root          61       2  0     0     0   7 июл01 ?     00:00:00 [kworker/7:0
+root          62       2  0     0     0   8 июл01 ?     00:00:00 [cpuhp/8]
+root          63       2  0     0     0   8 июл01 ?     00:00:00 [idle_inject
+root          64       2  0     0     0   8 июл01 ?     00:00:00 [migration/8
+root          65       2  0     0     0   8 июл01 ?     00:00:00 [ksoftirqd/8
+root          68       2  0     0     0   9 июл01 ?     00:00:00 [cpuhp/9]
+root          69       2  0     0     0   9 июл01 ?     00:00:00 [idle_inject
+root          70       2  0     0     0   9 июл01 ?     00:00:00 [migration/9
+root          71       2  0     0     0   9 июл01 ?     00:00:07 [ksoftirqd/9
+root          74       2  0     0     0  10 июл01 ?     00:00:00 [cpuhp/10]
+root          75       2  0     0     0  10 июл01 ?     00:00:00 [idle_inject
+root          76       2  0     0     0  10 июл01 ?     00:00:00 [migration/1
+root          77       2  0     0     0  10 июл01 ?     00:00:00 [ksoftirqd/1
+root          80       2  0     0     0  11 июл01 ?     00:00:00 [cpuhp/11]
+root          81       2  0     0     0  11 июл01 ?     00:00:00 [idle_inject
+root          82       2  0     0     0  11 июл01 ?     00:00:00 [migration/1
+root          83       2  0     0     0  11 июл01 ?     00:00:00 [ksoftirqd/1
+root          85       2  0     0     0  11 июл01 ?     00:00:00 [kworker/11:
+root          86       2  0     0     0   2 июл01 ?     00:00:00 [kdevtmpfs]
+root          87       2  0     0     0   2 июл01 ?     00:00:00 [inet_frag_w
+root          89       2  0     0     0   8 июл01 ?     00:00:00 [kauditd]
+root          91       2  0     0     0   9 июл01 ?     00:00:00 [khungtaskd]
+root          92       2  0     0     0   7 июл01 ?     00:00:00 [oom_reaper]
+root          94       2  0     0     0   9 июл01 ?     00:00:00 [writeback]
+root          95       2  0     0     0   6 июл01 ?     00:00:05 [kcompactd0]
+root          96       2  0     0     0  11 июл01 ?     00:00:00 [ksmd]
+root          97       2  0     0     0   2 июл01 ?     00:00:00 [khugepaged]
+root          98       2  0     0     0   5 июл01 ?     00:00:00 [kintegrityd
+root          99       2  0     0     0   6 июл01 ?     00:00:00 [kblockd]
+root         100       2  0     0     0   7 июл01 ?     00:00:00 [blkcg_punt_
+root         102       2  0     0     0   2 июл01 ?     00:00:00 [tpm_dev_wq]
+root         103       2  0     0     0   3 июл01 ?     00:00:00 [ata_sff]
+root         104       2  0     0     0   4 июл01 ?     00:00:00 [md]
+root         105       2  0     0     0   5 июл01 ?     00:00:00 [md_bitmap]
+root         106       2  0     0     0   6 июл01 ?     00:00:00 [edac-poller
+root         107       2  0     0     0   7 июл01 ?     00:00:00 [devfreq_wq]
+root         108       2  0     0     0   8 июл01 ?     00:00:00 [watchdogd]
+root         111       2  0     0     0   2 июл01 ?     00:00:00 [kworker/2:1
+root         112       2  0     0     0   8 июл01 ?     00:00:00 [kswapd0]
+root         113       2  0     0     0   9 июл01 ?     00:00:00 [ecryptfs-kt
+root         114       2  0     0     0  10 июл01 ?     00:00:00 [kthrotld]
+root         115       2  0     0     0   2 июл01 ?     00:00:00 [irq/24-pcie
+root         116       2  0     0     0   3 июл01 ?     00:00:00 [irq/25-pcie
+root         117       2  0     0     0   4 июл01 ?     00:00:00 [irq/26-pcie
+root         118       2  0     0     0   5 июл01 ?     00:00:00 [irq/27-pcie
+root         119       2  0     0     0   6 июл01 ?     00:00:00 [irq/28-pcie
+root         120       2  0     0     0   7 июл01 ?     00:00:00 [irq/29-pcie
+root         121       2  0     0     0   8 июл01 ?     00:00:00 [irq/30-pcie
+root         122       2  0     0     0   9 июл01 ?     00:00:00 [irq/31-pcie
+root         123       2  0     0     0  10 июл01 ?     00:00:00 [irq/32-pcie
+root         124       2  0     0     0  11 июл01 ?     00:00:00 [irq/33-pcie
+root         125       2  0     0     0   0 июл01 ?     00:00:00 [irq/34-pcie
+root         126       2  0     0     0   1 июл01 ?     00:00:00 [irq/35-pcie
+root         127       2  0     0     0   2 июл01 ?     00:00:00 [irq/36-pcie
+root         128       2  0     0     0   3 июл01 ?     00:00:00 [irq/37-pcie
+root         129       2  0     0     0   4 июл01 ?     00:00:00 [irq/38-pcie
+root         130       2  0     0     0   5 июл01 ?     00:00:00 [irq/39-pcie
+root         131       2  0     0     0   6 июл01 ?     00:00:00 [irq/40-pcie
+root         132       2  0     0     0   7 июл01 ?     00:00:00 [irq/41-pcie
+root         133       2  0     0     0   8 июл01 ?     00:00:00 [irq/42-pcie
+root         134       2  0     0     0   9 июл01 ?     00:00:00 [irq/43-pcie
+root         135       2  0     0     0  10 июл01 ?     00:00:00 [irq/44-pcie
+root         136       2  0     0     0  11 июл01 ?     00:00:00 [irq/45-pcie
+root         137       2  0     0     0   0 июл01 ?     00:00:00 [irq/46-pcie
+root         138       2  0     0     0   1 июл01 ?     00:00:00 [irq/47-pcie
+root         139       2  0     0     0   2 июл01 ?     00:00:00 [irq/48-pcie
+root         140       2  0     0     0   3 июл01 ?     00:00:00 [irq/49-pcie
+root         141       2  0     0     0   4 июл01 ?     00:00:00 [irq/50-pcie
+root         142       2  0     0     0   5 июл01 ?     00:00:00 [irq/51-pcie
+root         143       2  0     0     0   6 июл01 ?     00:00:00 [irq/52-pcie
+root         144       2  0     0     0   7 июл01 ?     00:00:00 [irq/53-pcie
+root         145       2  0     0     0   8 июл01 ?     00:00:00 [irq/54-pcie
+root         146       2  0     0     0   9 июл01 ?     00:00:00 [irq/55-pcie
+root         147       2  0     0     0  11 июл01 ?     00:00:00 [acpi_therma
+root         150       2  0     0     0   0 июл01 ?     00:00:00 [scsi_eh_0]
+root         151       2  0     0     0   5 июл01 ?     00:00:00 [scsi_tmf_0]
+root         152       2  0     0     0   6 июл01 ?     00:00:00 [scsi_eh_1]
+root         153       2  0     0     0   7 июл01 ?     00:00:00 [scsi_tmf_1]
+root         158       2  0     0     0   4 июл01 ?     00:00:00 [mld]
+root         159       2  0     0     0  11 июл01 ?     00:00:00 [ipv6_addrco
+root         168       2  0     0     0   7 июл01 ?     00:00:00 [kstrp]
+root         173       2  0     0     0   3 июл01 ?     00:00:00 [kworker/u25
+root         177       2  0     0     0   9 июл01 ?     00:00:00 [charger_man
+root         200       2  0     0     0   6 июл01 ?     00:00:00 [kworker/6:1
+root         213       2  0     0     0  10 июл01 ?     00:00:00 [kworker/10:
+root         215       2  0     0     0   9 июл01 ?     00:00:00 [kworker/9:1
+root         216       2  0     0     0   3 июл01 ?     00:00:00 [kworker/3:1
+root         220       2  0     0     0   7 июл01 ?     00:00:00 [kworker/7:1
+root         239       2  0     0     0  11 июл01 ?     00:00:00 [mpt_poll_0]
+root         240       2  0     0     0   6 июл01 ?     00:00:00 [mpt/0]
+root         241       2  0     0     0   8 июл01 ?     00:00:00 [scsi_eh_2]
+root         242       2  0     0     0   4 июл01 ?     00:00:00 [scsi_tmf_2]
+root         243       2  0     0     0   5 июл01 ?     00:00:00 [scsi_eh_3]
+root         244       2  0     0     0   6 июл01 ?     00:00:00 [scsi_tmf_3]
+root         245       2  0     0     0   7 июл01 ?     00:00:00 [scsi_eh_4]
+root         246       2  0     0     0   7 июл01 ?     00:00:00 [scsi_tmf_4]
+root         247       2  0     0     0   5 июл01 ?     00:00:00 [scsi_eh_5]
+root         248       2  0     0     0   7 июл01 ?     00:00:00 [scsi_tmf_5]
+root         249       2  0     0     0   0 июл01 ?     00:00:00 [scsi_eh_6]
+root         250       2  0     0     0   0 июл01 ?     00:00:00 [scsi_tmf_6]
+root         251       2  0     0     0   1 июл01 ?     00:00:00 [scsi_eh_7]
+root         252       2  0     0     0   3 июл01 ?     00:00:00 [scsi_tmf_7]
+root         253       2  0     0     0   6 июл01 ?     00:00:00 [scsi_eh_8]
+root         254       2  0     0     0   5 июл01 ?     00:00:00 [scsi_tmf_8]
+root         255       2  0     0     0   0 июл01 ?     00:00:00 [scsi_eh_9]
+root         256       2  0     0     0   8 июл01 ?     00:00:00 [scsi_tmf_9]
+root         257       2  0     0     0   4 июл01 ?     00:00:00 [scsi_eh_10]
+root         258       2  0     0     0  10 июл01 ?     00:00:00 [scsi_tmf_10
+root         259       2  0     0     0  10 июл01 ?     00:00:00 [scsi_eh_11]
+root         260       2  0     0     0   3 июл01 ?     00:00:00 [scsi_tmf_11
+root         261       2  0     0     0   1 июл01 ?     00:00:00 [scsi_eh_12]
+root         262       2  0     0     0   2 июл01 ?     00:00:00 [scsi_tmf_12
+root         263       2  0     0     0   6 июл01 ?     00:00:00 [scsi_eh_13]
+root         264       2  0     0     0   8 июл01 ?     00:00:00 [scsi_tmf_13
+root         265       2  0     0     0   6 июл01 ?     00:00:00 [scsi_eh_14]
+root         266       2  0     0     0   6 июл01 ?     00:00:00 [scsi_tmf_14
+root         267       2  0     0     0   6 июл01 ?     00:00:00 [scsi_eh_15]
+root         268       2  0     0     0   3 июл01 ?     00:00:00 [scsi_tmf_15
+root         269       2  0     0     0  10 июл01 ?     00:00:00 [scsi_eh_16]
+root         270       2  0     0     0   5 июл01 ?     00:00:00 [scsi_tmf_16
+root         271       2  0     0     0   7 июл01 ?     00:00:00 [scsi_eh_17]
+root         272       2  0     0     0   6 июл01 ?     00:00:00 [scsi_tmf_17
+root         273       2  0     0     0   5 июл01 ?     00:00:00 [scsi_eh_18]
+root         274       2  0     0     0  10 июл01 ?     00:00:00 [scsi_tmf_18
+root         275       2  0     0     0   8 июл01 ?     00:00:00 [scsi_eh_19]
+root         276       2  0     0     0   8 июл01 ?     00:00:00 [scsi_tmf_19
+root         277       2  0     0     0   9 июл01 ?     00:00:00 [scsi_eh_20]
+root         278       2  0     0     0  11 июл01 ?     00:00:00 [scsi_tmf_20
+root         279       2  0     0     0   4 июл01 ?     00:00:00 [scsi_eh_21]
+root         280       2  0     0     0   4 июл01 ?     00:00:00 [scsi_tmf_21
+root         281       2  0     0     0   9 июл01 ?     00:00:00 [scsi_eh_22]
+root         282       2  0     0     0   4 июл01 ?     00:00:00 [scsi_tmf_22
+root         283       2  0     0     0  11 июл01 ?     00:00:00 [scsi_eh_23]
+root         284       2  0     0     0   2 июл01 ?     00:00:00 [scsi_tmf_23
+root         285       2  0     0     0   4 июл01 ?     00:00:00 [scsi_eh_24]
+root         286       2  0     0     0   3 июл01 ?     00:00:00 [scsi_tmf_24
+root         287       2  0     0     0   0 июл01 ?     00:00:00 [scsi_eh_25]
+root         288       2  0     0     0   0 июл01 ?     00:00:00 [scsi_tmf_25
+root         289       2  0     0     0  11 июл01 ?     00:00:00 [scsi_eh_26]
+root         290       2  0     0     0   4 июл01 ?     00:00:00 [scsi_tmf_26
+root         291       2  0     0     0   3 июл01 ?     00:00:00 [scsi_eh_27]
+root         292       2  0     0     0   2 июл01 ?     00:00:00 [scsi_tmf_27
+root         293       2  0     0     0   0 июл01 ?     00:00:00 [scsi_eh_28]
+root         294       2  0     0     0   3 июл01 ?     00:00:00 [scsi_tmf_28
+root         297       2  0     0     0   8 июл01 ?     00:00:00 [scsi_eh_29]
+root         298       2  0     0     0  10 июл01 ?     00:00:00 [scsi_tmf_29
+root         299       2  0     0     0  11 июл01 ?     00:00:00 [scsi_eh_30]
+root         300       2  0     0     0   8 июл01 ?     00:00:00 [scsi_tmf_30
+root         303       2  0     0     0   4 июл01 ?     00:00:00 [scsi_eh_31]
+root         305       2  0     0     0   5 июл01 ?     00:00:00 [scsi_tmf_31
+root         336       2  0     0     0   1 июл01 ?     00:00:00 [scsi_eh_32]
+root         337       2  0     0     0  10 июл01 ?     00:00:00 [scsi_tmf_32
+root         365       2  0     0     0   8 июл01 ?     00:00:00 [jbd2/sda3-8
+root         366       2  0     0     0   1 июл01 ?     00:00:00 [ext4-rsv-co
+root         407       1  0 16154 21552   5 июл01 ?     00:00:02 /lib/systemd
+root         429       1  0 38141  1292   6 июл01 ?     00:00:00 vmware-vmblo
+root         443       2  0     0     0   9 июл01 ?     00:00:00 [irq/16-vmwg
+root         444       2  0     0     0   5 июл01 ?     00:00:00 [ttm]
+root         459       1  0  6749  6784   4 июл01 ?     00:00:00 /lib/systemd
+root         600       2  0     0     0   7 июл01 ?     00:00:02 [irq/57-vmw_
+root         602       2  0     0     0   8 июл01 ?     00:00:00 [irq/58-vmw_
+root         688       2  0     0     0   1 июл01 ?     00:00:00 [cryptd]
+root         717       2  0     0     0   9 июл01 ?     00:00:00 [kworker/u25
+systemd+     765       1  0  3709  6784   3 июл01 ?     00:02:22 /lib/systemd
+systemd+     785       1  0  6418 13504   3 июл01 ?     00:00:01 /lib/systemd
+systemd+     799       1  0 22347  7168   2 июл01 ?     00:00:00 /lib/systemd
+root         831       1  0 13430 10880   9 июл01 ?     00:00:00 /usr/bin/VGA
+root         844       1  0 60934  8320   4 июл01 ?     00:02:14 /usr/bin/vmt
+root         887       1  0 59997  7212   8 июл01 ?     00:00:02 /usr/libexec
+root         888       1  0   704  1792   2 июл01 ?     00:00:00 /usr/sbin/ac
+avahi        893       1  0  1907  3712  10 июл01 ?     00:00:01 avahi-daemon
+root         894       1  0  2622  4736  10 июл01 ?     00:00:00 /usr/lib/blu
+root         896       1  0  2375  2944   3 июл01 ?     00:00:00 /usr/sbin/cr
+message+     898       1  0  2746  5760   0 июл01 ?     00:00:01 @dbus-daemon
+root         899       1  0 65286 18240   0 июл01 ?     00:00:07 /usr/sbin/Ne
+root         904       1  0 20712  3968  11 июл01 ?     00:00:12 /usr/sbin/ir
+root         908       1  0 10261 20472   5 июл01 ?     00:00:00 /usr/bin/pyt
+root         910       1  0 60750 10960   6 июл01 ?     00:00:01 /usr/libexec
+root         912       1  0 60018  7168  11 июл01 ?     00:00:00 /usr/libexec
+syslog       914       1  0 55601  6016   0 июл01 ?     00:00:00 /usr/sbin/rs
+root         924       1  0 514967 33184  2 июл01 ?     00:00:13 /usr/lib/sna
+root         926       1  0 59128  6656   0 июл01 ?     00:00:00 /usr/libexec
+root         928       1  0  3867  7716   6 июл01 ?     00:00:00 /lib/systemd
+root         929       1  0 98274 12208   8 июл01 ?     00:00:00 /usr/libexec
+root         930       1  0  4126  6144  10 июл01 ?     00:00:00 /sbin/wpa_su
+avahi        937     893  0  1861  1152   4 июл01 ?     00:00:00 avahi-daemon
+root         975       1  0 79492 11716   5 июл01 ?     00:00:00 /usr/sbin/Mo
+root        1004       1  0 29515 23680   7 июл01 ?     00:00:00 /usr/bin/pyt
+root        1020       1  0 60342  8704  10 июл01 ?     00:00:00 /usr/sbin/gd
+kernoops    1113       1  0  3273  2220   0 июл01 ?     00:00:00 /usr/sbin/ke
+kernoops    1126       1  0  3273  2200   7 июл01 ?     00:00:00 /usr/sbin/ke
+rtkit       1163       1  0 38501  3072   5 июл01 ?     00:00:02 /usr/libexec
+root        1283       1  0 60558  8704   3 июл01 ?     00:00:00 /usr/libexec
+root        1289       1  0 74559 20144   1 июл01 ?     00:00:00 /usr/libexec
+colord      1441       1  0 61336 13000   5 июл01 ?     00:00:00 /usr/libexec
+root        1527    1020  0 79553 10880   6 июл01 ?     00:00:00 gdm-session-
+schiller    1536       1  0  4503 10368   0 июл01 ?     00:00:00 /lib/systemd
+schiller    1537    1536  0 42499  5780   4 июл01 ?     00:00:00 (sd-pam)
+schiller    1543    1536  0  9894  6400   9 июл01 ?     00:00:00 /usr/bin/pip
+schiller    1544    1536  0  5866  6528   6 июл01 ?     00:00:00 /usr/bin/pip
+schiller    1545    1536  0 374880 30032  1 июл01 ?     00:00:00 /usr/bin/pul
+schiller    1554       1  0 97091  7200   9 июл01 ?     00:00:00 /usr/bin/gno
+schiller    1567    1536  0  2512  5632  10 июл01 ?     00:00:00 /usr/bin/dbu
+schiller    1568    1536  0 134228 7040   7 июл01 ?     00:00:00 /usr/libexec
+schiller    1572    1536  0 59038  6016   1 июл01 ?     00:00:00 /usr/libexec
+root        1578    1568  0   699  1792   5 июл01 ?     00:00:00 fusermount3 
+schiller    1612    1527  0 40599  5888   0 июл01 tty2  00:00:00 /usr/libexec
+schiller    1617    1612  0 55762 15872   5 июл01 tty2  00:00:00 /usr/libexec
+schiller    1681    1536  0 22979  5632   1 июл01 ?     00:00:00 /usr/libexec
+schiller    1692    1536  0 60164  7808   1 июл01 ?     00:00:00 /usr/libexec
+schiller    1699    1536  0 95224  6528   9 июл01 ?     00:00:00 /usr/libexec
+schiller    1701    1536  0 111399 17024  1 июл01 ?     00:00:00 /usr/libexec
+schiller    1720    1701  0 77405  7680   3 июл01 ?     00:00:00 /usr/libexec
+schiller    1727    1536  0 1213106 277680 8 июл01 ?    00:04:22 /usr/bin/gno
+schiller    1729    1720  0  2141  4352   2 июл01 ?     00:00:00 /usr/bin/dbu
+root        1740       2  0     0     0  11 июл01 ?     00:00:00 [kworker/11:
+schiller    1755    1536  0 145699 17920  6 июл01 ?     00:00:00 /usr/libexec
+schiller    1761    1536  0 268054 25600  5 июл01 ?     00:00:00 /usr/libexec
+schiller    1766    1536  0 78982  9984  10 июл01 ?     00:00:00 /usr/libexec
+schiller    1771    1536  0 145456 40064  1 июл01 ?     00:00:00 /usr/libexec
+schiller    1774    1536  0 59160  6528   2 июл01 ?     00:00:00 /usr/libexec
+schiller    1777    1536  0 210124 30336  2 июл01 ?     00:00:00 /usr/libexec
+schiller    1788    1536  0 84602 15232   9 июл01 ?     00:00:00 /usr/libexec
+schiller    1792    1536  0 78804  7936   9 июл01 ?     00:00:05 /usr/libexec
+schiller    1803    1536  0 39243  5632   6 июл01 ?     00:00:00 /usr/libexec
+schiller    1804    1536  0 186501 28544  9 июл01 ?     00:00:00 /usr/libexec
+schiller    1811    1536  0 59117  6528  11 июл01 ?     00:00:00 /usr/libexec
+schiller    1817    1536  0 59389  6784   7 июл01 ?     00:00:00 /usr/libexec
+schiller    1832    1692  0 97150  8832  11 июл01 ?     00:00:00 /usr/libexec
+schiller    1842    1536  0 732794 27492 10 июл01 ?     00:00:00 /usr/bin/gjs
+schiller    1845    1536  0 40672  7424   1 июл01 ?     00:00:00 /usr/libexec
+schiller    1862    1536  0   723  1536   3 июл01 ?     00:00:00 sh -c /usr/b
+schiller    1863    1536  0 77608  6656   4 июл01 ?     00:00:00 /usr/libexec
+schiller    1866    1862  0 115647 11564 11 июл01 ?     00:00:01 /usr/bin/ibu
+schiller    1868    1536  0 112768 25344  3 июл01 ?     00:00:00 /usr/libexec
+schiller    1870    1536  0 93867 15872  10 июл01 ?     00:00:00 /usr/libexec
+schiller    1879    1536  0 78005  7808  10 июл01 ?     00:00:02 /usr/libexec
+schiller    1880    1536  0 85148 21160   5 июл01 ?     00:00:00 /usr/libexec
+schiller    1885    1536  0 179186 26460  4 июл01 ?     00:00:00 /usr/libexec
+schiller    1888    1536  0 112647 25856  8 июл01 ?     00:00:00 /usr/libexec
+schiller    1890    1536  0 62465 11008  11 июл01 ?     00:00:00 /usr/libexec
+schiller    1892    1536  0 114466 6656   8 июл01 ?     00:00:00 /usr/libexec
+schiller    1898    1536  0 59074  6144  10 июл01 ?     00:00:00 /usr/libexec
+schiller    1902    1536  0 116485 10368 11 июл01 ?     00:00:00 /usr/libexec
+schiller    1912    1536  0 78078  8192   3 июл01 ?     00:00:00 /usr/libexec
+schiller    1914    1536  0 79838  9472   1 июл01 ?     00:00:00 /usr/libexec
+schiller    1920    1536  0 85296 22000   2 июл01 ?     00:00:00 /usr/libexec
+schiller    1923    1866  0 40872  7168   5 июл01 ?     00:00:00 /usr/libexec
+schiller    1927    1701  0 58068  7168   1 июл01 ?     00:00:00 /usr/libexec
+schiller    1930    1866  0 86961 28644   7 июл01 ?     00:00:01 /usr/libexec
+schiller    1943    1536  0 59317  7168  10 июл01 ?     00:00:00 /usr/libexec
+schiller    1951    1536  0 35215 37920   5 июл01 ?     00:02:11 /usr/bin/vmt
+schiller    1955    1701  0 205638 63104  5 июл01 ?     00:00:00 /usr/libexec
+schiller    2018    1536  0 155956 13056  4 июл01 ?     00:00:02 /usr/libexec
+schiller    2027    1536  0 85592 14848   1 июл01 ?     00:00:00 /usr/libexec
+schiller    2043    1536  0 165742 28548 10 июл01 ?     00:00:00 /usr/libexec
+schiller    2054    1866  0 40871  7168  10 июл01 ?     00:00:00 /usr/libexec
+schiller    2056    1727  0 58892 80960   3 июл01 ?     00:00:00 /usr/bin/Xwa
+schiller    2059    1536  0 718485 27860  4 июл01 ?     00:00:00 /usr/bin/gjs
+schiller    2078    1536  0 161919 34284  1 июл01 ?     00:00:00 /usr/libexec
+schiller    2104    1536  0 136883 79480 11 июл01 ?     00:00:00 /usr/libexec
+schiller    2107    1536  0 86124 25348   2 июл01 ?     00:00:00 /usr/libexec
+root        2109       2  0     0     0  10 июл01 ?     00:00:00 [kworker/10:
+root        2133       2  0     0     0   5 июл01 ?     00:00:00 [kworker/5:3
+schiller    2176    1536  0 48558 25160   9 июл01 ?     00:00:00 /usr/libexec
+schiller    2192    1536  0  9730 11776  10 июл01 ?     00:00:00 /snap/snapd-
+schiller    2242    1536  0 40764  6400   7 июл01 ?     00:00:00 /usr/libexec
+schiller    2268    2192  0 107258 29708  2 июл01 ?     00:00:00 /snap/snapd-
+schiller    2315    1536  0 223920 58524  2 июл01 ?     00:00:00 /usr/bin/gno
+schiller    2320    1536  0 138321 51624  2 июл01 ?     00:00:03 /usr/libexec
+schiller    2413    2320  0  3118  6528  10 июл01 pts/0 00:00:00 bash
+root        2460       2  0     0     0   8 июл01 ?     00:00:00 [kworker/8:2
+root        2461       2  0     0     0   8 июл01 ?     00:00:00 [kworker/8:3
+schiller    2467    1701  0 105091 30836  9 июл01 ?     00:00:03 update-notif
+schiller    2500    1536  0 201907 82104  3 июл01 ?     00:00:09 /usr/bin/nau
+root        2529       1  0  4360 11008   0 июл01 ?     00:00:00 sshd: schill
+schiller    2605    2529  0  4393  7996   1 июл01 ?     00:00:00 sshd: schill
+schiller    2606    2605  0  2845  5504   4 июл01 pts/1 00:00:00 -bash
+root        2679       2  0     0     0   9 июл01 ?     00:00:00 [kworker/9:2
+root        2737       2  0     0     0   0 июл01 ?     00:00:00 [kworker/0:3
+root        2829       2  0     0     0   4 июл01 ?     00:00:00 [kworker/4:4
+root        2830       2  0     0     0   4 июл01 ?     00:00:00 [kworker/4:5
+root        2884       2  0     0     0   1 июл01 ?     00:00:00 [kworker/1:4
+schiller    3188    1554  0  1995  5632   4 июл01 ?     00:00:00 /usr/bin/ssh
+root        3349       2  0     0     0   0 июл01 ?     00:00:00 [kworker/0:1
+root        4629       2  0     0     0   7 июл02 ?     00:00:04 [kworker/7:2
+root        4696       2  0     0     0  10 июл02 ?     00:00:03 [kworker/10:
+root        4699       2  0     0     0   0 июл02 ?     00:00:36 [kworker/0:2
+root        4700       2  0     0     0   5 июл02 ?     00:00:03 [kworker/5:1
+root        5162       2  0     0     0   6 июл02 ?     00:00:06 [kworker/6:1
+root        5163       1  0  3859  9216   5 июл02 ?     00:00:00 sshd: /usr/s
+root        5510       2  0     0     0   5 июл02 ?     00:00:00 [kworker/5:0
+root        6054       2  0     0     0   3 июл02 ?     00:00:01 [kworker/3:2
+root        6104       2  0     0     0  11 00:00 ?        00:00:01 [kworker/11:
+root        6137       1  0 18329 14080   3 00:00 ?        00:00:00 /usr/sbin/cu
+root        6175       1  0 43159 11520   1 00:00 ?        00:00:00 /usr/sbin/cu
+root        6676       2  0     0     0   8 02:15 ?        00:00:00 [kworker/8:0
+root        6757       2  0     0     0   2 03:37 ?        00:00:00 [kworker/2:1
+root        6759       2  0     0     0   4 03:37 ?        00:00:01 [kworker/4:2
+root        6763       2  0     0     0   1 03:37 ?        00:00:01 [kworker/1:0
+root        6768       2  0     0     0   9 03:43 ?        00:00:35 [kworker/9:0
+root        6781       2  0     0     0   1 04:15 ?        00:00:00 [kworker/1:1
+root        7208       2  0     0     0   4 08:29 ?        00:00:00 [kworker/4:1
+root        7214       2  0     0     0   2 08:29 ?        00:00:00 [kworker/2:2
+root        7215       2  0     0     0   3 08:29 ?        00:00:00 [kworker/3:1
+root        7302       2  0     0     0   0 09:31 ?        00:00:00 [kworker/0:0
+root        7304       2  0     0     0   7 09:34 ?        00:00:00 [kworker/7:1
+root        7327       2  0     0     0   6 10:29 ?        00:00:00 [kworker/6:2
+root        7330       2  0     0     0   5 10:29 ?        00:00:00 [kworker/5:2
+root        7355       2  0     0     0   5 11:18 ?        00:00:00 [kworker/u25
+root        7364       2  0     0     0   8 11:33 ?        00:00:00 [kworker/8:2
+root        7377       2  0     0     0  11 12:11 ?        00:00:00 [kworker/u25
+root        7378       2  0     0     0   9 12:12 ?        00:00:00 [kworker/9:2
+root        7387       2  0     0     0   4 12:26 ?        00:00:00 [kworker/u25
+root        7388       2  0     0     0   9 12:27 ?        00:00:00 [kworker/9:1
+schiller    7404    1727  0 932453 64928  1 12:27 ?        00:00:00 gjs /usr/sha
+root        7427       2  0     0     0   1 12:27 ?        00:00:00 [kworker/1:0
+root        7460       2  0     0     0  11 12:28 ?        00:00:00 [kworker/11:
+root        7463       2  0     0     0  10 12:28 ?        00:00:00 [kworker/10:
+root        7464       2  0     0     0   3 12:28 ?        00:00:00 [kworker/u25
+root        7473       2  0     0     0   0 12:31 ?        00:00:00 [kworker/0:1
+root        7477       2  0     0     0   4 12:31 ?        00:00:00 [kworker/4:0
+root        7478       2  0     0     0   1 12:31 ?        00:00:00 [kworker/1:2
+root        7482       2  0     0     0   7 12:31 ?        00:00:00 [kworker/7:0
+root        7483       2  0     0     0   3 12:31 ?        00:00:00 [kworker/3:0
+root        7487       2  0     0     0   5 12:31 ?        00:00:00 [kworker/5:0
+root        7492       2  0     0     0   7 12:31 ?        00:00:00 [kworker/7:3
+root        7496       2  0     0     0   9 12:31 ?        00:00:00 [kworker/9:3
+root        7497       2  0     0     0   2 12:31 ?        00:00:00 [kworker/2:0
+schiller    7539    2413  0  2098  2304   1 12:33 pts/0    00:00:00 script
+schiller    7540    7539  0  2821  5376   5 12:33 pts/2    00:00:00 bash -i
+schiller    7547    7540  0  3169  3328   6 12:34 pts/2    00:00:00 ps -eF
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ ps -la [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ka
+[?2004lF S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000    1617    1612  0  80   0 - 55762 do_pol tty2     00:00:00 gnome-sess
+0 S  1000    7539    2413  0  80   0 -  2098 do_pol pts/0    00:00:00 script
+0 R  1000    7551    7540  0  80   0 -  3169 -      pts/2    00:00:00 ps
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ top &
+[?2004l[1] 7553
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ [?1l>jobs
+[?2004l[1]+  Stopped                 top
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ kill 7 553
+[?2004l[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ os[K[Kps -la [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ka
+[?2004lF S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000    1617    1612  0  80   0 - 55762 do_pol tty2     00:00:00 gnome-sess
+0 S  1000    7539    2413  0  80   0 -  2098 do_pol pts/0    00:00:00 script
+0 T  1000    7553    7540  0  80   0 -  3139 do_sig pts/2    00:00:00 top
+0 R  1000    7558    7540  0  80   0 -  3169 -      pts/2    00:00:00 ps
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ kill [K[K[K[K[Kjobs - l
+[?2004l[1]+  7553 Stopped (signal)        top
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ kill - 9 7553
+[?2004l[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ kill -9 7553[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ jobs
+l[K[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ ps -la [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ka
+[?2004lF S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000    1617    1612  0  80   0 - 55762 do_pol tty2     00:00:00 gnome-sess
+0 S  1000    7539    2413  0  80   0 -  2098 do_pol pts/0    00:00:00 script
+0 R  1000    7560    7540  0  80   0 -  3169 -      pts/2    00:00:00 ps
+[1]+  Killed                  top
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ ps -la [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckill -9 7553[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ jobs
+l[K[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ ps -la [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckill 7553[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ [2Pjobs
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckill 7553[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ ps -la [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjobs -l[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ kill
+9 7553[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ ps -la [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -la [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckill -9 7553[1P 75531 7553[C5 7553[C[C
+[?2004lbash: kill: (7553) - No such process
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ kill -15 7553[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C15[1P 7553[A]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ [C[C[C[C[C-15 7553[1P[1P 75539 7553[C
+[?2004lbash: kill: (7553) - No such process
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ ps l[K-la [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ka
+[?2004lF S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000    1617    1612  0  80   0 - 55762 do_pol tty2     00:00:00 gnome-sess
+0 S  1000    7539    2413  0  80   0 -  2098 do_pol pts/0    00:00:00 script
+0 R  1000    7563    7540  0  80   0 -  3169 -      pts/2    00:00:00 ps
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ exit
+[?2004lexit
+
+Script done on 2024-07-03 12:42:20+00:00 [COMMAND_EXIT_CODE="0"]
