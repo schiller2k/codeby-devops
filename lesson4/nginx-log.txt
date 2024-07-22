@@ -1,53 +1,0 @@
-Script started on 2024-07-17 12:42:34+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="150" LINES="45"]
-[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ service nginx status
-[?2004l[?1h=○ nginx.service - A high performance web server and a reverse proxy server[m
-     Loaded: loaded (/lib/systemd/system/nginx.service; disabled; vendor preset: enabled)[m
-     Active: inactive (dead)[m
-       Docs: man:nginx(8)[m
-[K[?1l>[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ service nginx status[1@m[1@y[1@-
-[?2004l[?1h=[0;1;32m●[0m my-nginx.service[m
-     Loaded: loaded (/etc/systemd/system/my-nginx.service; enabled; vendor preset: enabled)[m
-     Active: [0;1;32mactive (running)[0m since Wed 2024-07-17 12:40:55 GMT; 1min 56s ago[m
-    Process: 985 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
-    Process: 1018 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
-   Main PID: 1046 (nginx)[m
-      Tasks: 13 (limit: 4554)[m
-     Memory: 15.4M[m
-        CPU: 69ms[m
-     CGroup: /system.slice/my-nginx.service[m
-             ├─1046 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[m
-             ├─1048 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1049 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1050 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1052 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1053 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1054 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1055 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1057 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1060 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1062 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             ├─1063 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-             └─1064 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
-[m
-июл 17 12:40:55 schiller-virtual-machine systemd[1]: Starting my-nginx.service...[m
-июл 17 12:40:55 schiller-virtual-machine systemd[1]: Started my-nginx.service.[m
-[K[?1l>[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ c[Kcat /etc/syts[K[K[Ksys[K[K[Kystemd/system/my-nginx.service 
-[?2004l[Unit]
-After=network.target nss-lookup.target
-
-[Service]
-Type=forking
-PIDFile=/run/nginx.pid
-ExecStartPre=/usr/sbin/nginx -t -q -g 'daemon on; master_process on;'
-ExecStart=/usr/sbin/nginx -g 'daemon on; master_process on;'
-ExecReload=/usr/sbin/nginx -g 'daemon on; master_process on;' -s reload
-ExecStop=-/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid
-TimeoutStopSec=5
-KillMode=mixed
-
-[Install]
-WantedBy=multi-user.target
-[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson4[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson4[00m$ s[Kexit
-[?2004lexit
-
-Script done on 2024-07-17 12:43:36+00:00 [COMMAND_EXIT_CODE="0"]
