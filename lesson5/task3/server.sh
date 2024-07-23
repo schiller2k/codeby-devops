@@ -37,6 +37,7 @@ sudo sed -i 's/;push "dhcp-option DNS 208.67.220.220"/push "dhcp-option DNS 8.8.
 #sudo openvpn /etc/openvpn/server.conf
 sudo systemctl start openvpn@server
 sudo sysctl -w net.ipv4.ip_forward=1
+sysctl -p
 
 #ip -br a
 sudo iptables -I FORWARD -i tun0 -o enp0s8 -j ACCEPT
