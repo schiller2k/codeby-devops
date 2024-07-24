@@ -20,24 +20,32 @@ sudo ./easyrsa init-pki
 sudo ./easyrsa build-ca nopass
 sudo ./easyrsa gen-dh
 sudo openvpn --genkey --secret ./pki/ta.key
-sudo ./easyrsa gen-crl
+#sudo ./easyrsa gen-crl
+#sudo ./easyrsa gen-req server nopass
+#sudo ./easyrsa sign-req server serverspace
 
 sudo ./easyrsa build-server-full server nopass
-cp ./pki/ca.crt /etc/openvpn/ca.crt
-cp ./pki/dh.pem /etc/openvpn/dh2048.pem
-cp ./pki/crl.pem /etc/openvpn/crl.pem
-cp ./pki/ta.key /etc/openvpn/ta.key
-cp ./pki/issued/server.crt /etc/openvpn/server.crt
-cp ./pki/private/server.key /etc/openvpn/server.key
 
-zcat /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz | sudo tee /etc/openvpn/server.conf
-sudo sed -i 's/;push "dhcp-option DNS 208.67.222.222"/push "dhcp-option DNS 8.8.8.8"/' /etc/openvpn/server.conf
-sudo sed -i 's/;push "dhcp-option DNS 208.67.220.220"/push "dhcp-option DNS 8.8.4.4"/' /etc/openvpn/server.conf
+cp ./pki/ca.crt ./pki/ta.key ./pki/issued/server.crt ./pki/private/server.key /etc/openvpn/server
+cp ./pki/dh.pem /etc/openvpn/server/dh2048.pem
 
-#sudo openvpn /etc/openvpn/server.conf
+zcat /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz | sudo tee /etc/openvpn/server/server.conf
+sudo sed -i 's/;push "redirect-gateway def1 bypass-dhcp"/push "redirect-gateway def1 bypass-dhcp"/' /etc/openvpn/server/server.conf
+sudo sed -i 's/;push "dhcp-option DNS 208.67.222.222"/push "dhcp-option DNS 8.8.8.8"/' /etc/openvpn/server/server.conf
+sudo sed -i 's/;push "dhcp-option DNS 208.67.220.220"/push "dhcp-option DNS 8.8.4.4"/' /etc/openvpn/server/server.conf
+sudo sed -i 's#ca ca.crt#ca /etc/openvpn/server/ca.crt#' /etc/openvpn/server/server.conf
+sudo sed -i 's#cert server.crt#cert /etc/openvpn/server/server.crt#' /etc/openvpn/server/server.conf
+sudo sed -i 's#dh dh2048.pem#dh /etc/openvpn/server/dh2048.pem#' /etc/openvpn/server/server.conf
+sudo sed -i 's#key server.key#key /etc/openvpn/server/server.key#' /etc/openvpn/server/server.conf
+sudo sed -i 's#tls-auth ta.key 0#tls-auth /etc/openvpn/server/ta.key 0#' /etc/openvpn/server/server.conf
+sudo sed -i 's#;comp-lzo#comp-lzo#' /etc/openvpn/server/server.conf
+sudo sed -i 's#^;log#log#' /etc/openvpn/server/server.conf
+sudo ln -s /etc/openvpn/server/server.conf /etc/openvpn/server.conf
+
+sudo systemctl enable openvpn@server
 sudo systemctl start openvpn@server
 sudo sysctl -w net.ipv4.ip_forward=1
-sysctl -p
+sudo sysctl -p
 
 #ip -br a
 sudo iptables -I FORWARD -i tun0 -o enp0s8 -j ACCEPT
@@ -47,17 +55,14 @@ sudo iptables -t nat -A POSTROUTING -o enp0s8 -j MASQUERADE
 sudo ./easyrsa build-client-full client nopass
 sudo mkdir -p /etc/openvpn/clients
 
-CLIENT=/etc/openvpn/clients/client
+CLIENT=/etc/openvpn/client
 
-sudo mkdir -p $CLIENT
-cd $CLIENT
-cp /etc/openvpn/easy-rsa/pki/ca.crt $CLIENT
-cp /etc/openvpn/easy-rsa/pki/ta.key $CLIENT
-cp /etc/openvpn/easy-rsa/pki/issued/client.crt $CLIENT
-cp /etc/openvpn/easy-rsa/pki/private/client.key $CLIENT
-sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf ./client.conf
+cd /etc/openvpn/easy-rsa/pki
+cp ca.crt ta.key ./issued/client.crt ./private/client.key $CLIENT
+sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf $CLIENT/client.conf
 
-sudo sed -i 's/remote my-server-1 1194/remote 192.168.56.34 1194/' ./client.conf
+sudo sed -i 's/remote my-server-1 1194/remote 192.168.56.34 1194/' $CLIENT/client.conf
+sudo sed -i 's/#comp-lzo/comp-lzo/' $CLIENT/client.conf
 
-cp -r $CLIENT /vagrant/client
+cp -r $CLIENT /vagrant
 

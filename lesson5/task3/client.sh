@@ -2,7 +2,9 @@
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install -y openvpn
+sudo apt install -y openvpn screen iptables
 cp -r /vagrant/client /etc/openvpn
-#sudo openvpn /etc/openvpn/client/client.conf
+
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo sysctl -p
 
