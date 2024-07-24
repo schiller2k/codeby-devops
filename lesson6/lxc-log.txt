@@ -1,0 +1,1057 @@
+Script started on 2024-07-22 07:12:17+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="150" LINES="45"]
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson6[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson6[00m$ sudo snap install lxd
+[?2004l[sudo] password for schiller: 
+Ensure prerequisites for "lxd" are available                                                                                                         /Fetch and check assertions for snap "lxd" (28460)                                                                                                    -Fetch and check assertions for snap "lxd" (28460)                                                                                                    \Fetch and check assertions for snap "lxd" (28460)                                                                                                    |Mount snap "lxd" (28460)                                                                                                                             /Mount snap "lxd" (28460)                                                                                                                             -Mount snap "lxd" (28460)                                                                                                                             \Mount snap "lxd" (28460)                                                                                                                             |Setup snap "lxd" (28460) security profiles                                                                                                           /Setup snap "lxd" (28460) security profiles                                                                                                           -Setup snap "lxd" (28460) security profiles                                                                                                           \Setup snap "lxd" (28460) security profiles                                                                                                           |Setup snap "lxd" (28460) security profiles for auto-connections                                                                                      /Setup snap "lxd" (28460) security profiles for auto-connections                                                                                      -Setup snap "lxd" (28460) security profiles for auto-connections                                                                                      \Setup snap "lxd" (28460) security profiles for auto-connections                                                                                      |Setup snap "lxd" (28460) security profiles for auto-connections                                                                                      /Run install hook of "lxd" snap if present                                                                                                            -Start snap "lxd" (28460) services                                                                                                                    \Start snap "lxd" (28460) services                                                                                                                    |Start snap "lxd" (28460) services                                                                                                                    /Start snap "lxd" (28460) services                                                                                                                    -Start snap "lxd" (28460) services                                                                                                                    \Start snap "lxd" (28460) services                                                                                                                    |Run configure hook of "lxd" snap if present                                                                                                          /Run configure hook of "lxd" snap if present                                                                                                          -[0m[?25h[Klxd (5.21/stable) 5.21.1-d46c406 from Canonical[32m✓[0m installed
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson6[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson6[00m$ lxd init
+[?2004lWould you like to use LXD clustering? (yes/no) [default=no]: 
+Do you want to configure a new storage pool? (yes/no) [default=yes]: 
+Name of the new storage pool [default=default]: 
+Name of the storage backend to use (btrfs, ceph, dir, lvm, powerflex, zfs) [default=zfs]: 
+Create a new ZFS pool? (yes/no) [default=yes]: 
+Would you like to use an existing empty block device (e.g. a disk or partition)? (yes/no) [default=no]: 
+Size in GiB of the new loop device (1GiB minimum) [default=7GiB]: 
+Would you like to connect to a MAAS server? (yes/no) [default=no]: 
+Would you like to create a new local network bridge? (yes/no) [default=yes]: 
+What should the new bridge be called? [default=lxdbr0]: 
+What IPv4 address should be used? (CIDR subnet notation, “auto” or “none”) [default=auto]: 
+What IPv6 address should be used? (CIDR subnet notation, “auto” or “none”) [default=auto]: 
+Would you like the LXD server to be available over the network? (yes/no) [default=no]: 
+Would you like stale cached images to be updated automatically? (yes/no) [default=yes]: 
+Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]: 
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson6[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson6[00m$ lxd lau[K[K[K[K[Kc launch ubuntu [K:18.04 web
+[?2004lCreating web
+Retrieving image: metadata: 100% (1.91GB/s)                                            Retrieving image: rootfs: 1% (801.60kB/s)                                            Retrieving image: rootfs: 2% (839.35kB/s)                                            Retrieving image: rootfs: 3% (844.37kB/s)                                            Retrieving image: rootfs: 4% (847.04kB/s)                                            Retrieving image: rootfs: 5% (848.62kB/s)                                            Retrieving image: rootfs: 6% (840.32kB/s)                                            Retrieving image: rootfs: 7% (842.39kB/s)                                            Retrieving image: rootfs: 8% (846.91kB/s)                                            Retrieving image: rootfs: 9% (847.82kB/s)                                            Retrieving image: rootfs: 10% (848.47kB/s)                                            Retrieving image: rootfs: 10% (849.10kB/s)                                            Retrieving image: rootfs: 11% (849.62kB/s)                                            Retrieving image: rootfs: 12% (850.03kB/s)                                            Retrieving image: rootfs: 13% (845.33kB/s)                                            Retrieving image: rootfs: 14% (845.99kB/s)                                            Retrieving image: rootfs: 15% (846.55kB/s)                                            Retrieving image: rootfs: 16% (847.09kB/s)                                            Retrieving image: rootfs: 17% (880.66kB/s)                                            Retrieving image: rootfs: 18% (924.98kB/s)                                            Retrieving image: rootfs: 19% (964.91kB/s)                                            Retrieving image: rootfs: 19% (1.01MB/s)                                            Retrieving image: rootfs: 20% (1.05MB/s)                                            Retrieving image: rootfs: 21% (1.09MB/s)                                            Retrieving image: rootfs: 22% (1.13MB/s)                                            Retrieving image: rootfs: 23% (1.17MB/s)                                            Retrieving image: rootfs: 24% (1.21MB/s)                                            Retrieving image: rootfs: 25% (1.25MB/s)                                            Retrieving image: rootfs: 26% (1.27MB/s)                                            Retrieving image: rootfs: 27% (1.31MB/s)                                            Retrieving image: rootfs: 28% (1.35MB/s)                                            Retrieving image: rootfs: 28% (1.39MB/s)                                            Retrieving image: rootfs: 29% (1.43MB/s)                                            Retrieving image: rootfs: 30% (1.46MB/s)                                            Retrieving image: rootfs: 31% (1.51MB/s)                                            Retrieving image: rootfs: 32% (1.53MB/s)                                            Retrieving image: rootfs: 33% (1.57MB/s)                                            Retrieving image: rootfs: 34% (1.60MB/s)                                            Retrieving image: rootfs: 35% (1.64MB/s)                                            Retrieving image: rootfs: 36% (1.68MB/s)                                            Retrieving image: rootfs: 37% (1.71MB/s)                                            Retrieving image: rootfs: 37% (1.74MB/s)                                            Retrieving image: rootfs: 38% (1.78MB/s)                                            Retrieving image: rootfs: 39% (1.81MB/s)                                            Retrieving image: rootfs: 40% (1.84MB/s)                                            Retrieving image: rootfs: 41% (1.87MB/s)                                            Retrieving image: rootfs: 42% (1.90MB/s)                                            Retrieving image: rootfs: 43% (1.93MB/s)                                            Retrieving image: rootfs: 44% (1.96MB/s)                                            Retrieving image: rootfs: 45% (1.99MB/s)                                            Retrieving image: rootfs: 46% (2.02MB/s)                                            Retrieving image: rootfs: 47% (2.05MB/s)                                            Retrieving image: rootfs: 47% (2.08MB/s)                                            Retrieving image: rootfs: 48% (2.11MB/s)                                            Retrieving image: rootfs: 49% (2.14MB/s)                                            Retrieving image: rootfs: 50% (2.17MB/s)                                            Retrieving image: rootfs: 51% (2.19MB/s)                                            Retrieving image: rootfs: 52% (2.22MB/s)                                            Retrieving image: rootfs: 53% (2.25MB/s)                                            Retrieving image: rootfs: 54% (2.27MB/s)                                            Retrieving image: rootfs: 55% (2.30MB/s)                                            Retrieving image: rootfs: 56% (2.33MB/s)                                            Retrieving image: rootfs: 57% (2.36MB/s)                                            Retrieving image: rootfs: 57% (2.38MB/s)                                            Retrieving image: rootfs: 58% (2.40MB/s)                                            Retrieving image: rootfs: 59% (2.43MB/s)                                            Retrieving image: rootfs: 60% (2.45MB/s)                                            Retrieving image: rootfs: 61% (2.48MB/s)                                            Retrieving image: rootfs: 62% (2.51MB/s)                                            Retrieving image: rootfs: 63% (2.53MB/s)                                            Retrieving image: rootfs: 64% (2.55MB/s)                                            Retrieving image: rootfs: 65% (2.58MB/s)                                            Retrieving image: rootfs: 66% (2.60MB/s)                                            Retrieving image: rootfs: 66% (2.63MB/s)                                            Retrieving image: rootfs: 67% (2.65MB/s)                                            Retrieving image: rootfs: 68% (2.67MB/s)                                            Retrieving image: rootfs: 69% (2.69MB/s)                                            Retrieving image: rootfs: 70% (2.71MB/s)                                            Retrieving image: rootfs: 71% (2.74MB/s)                                            Retrieving image: rootfs: 72% (2.75MB/s)                                            Retrieving image: rootfs: 73% (2.78MB/s)                                            Retrieving image: rootfs: 74% (2.79MB/s)                                            Retrieving image: rootfs: 75% (2.82MB/s)                                            Retrieving image: rootfs: 76% (2.84MB/s)                                            Retrieving image: rootfs: 76% (2.87MB/s)                                            Retrieving image: rootfs: 77% (2.88MB/s)                                            Retrieving image: rootfs: 78% (2.91MB/s)                                            Retrieving image: rootfs: 79% (2.93MB/s)                                            Retrieving image: rootfs: 80% (2.94MB/s)                                            Retrieving image: rootfs: 81% (2.96MB/s)                                            Retrieving image: rootfs: 82% (2.99MB/s)                                            Retrieving image: rootfs: 83% (3.01MB/s)                                            Retrieving image: rootfs: 84% (3.03MB/s)                                            Retrieving image: rootfs: 85% (3.05MB/s)                                            Retrieving image: rootfs: 86% (3.07MB/s)                                            Retrieving image: rootfs: 86% (3.09MB/s)                                            Retrieving image: rootfs: 87% (3.11MB/s)                                            Retrieving image: rootfs: 88% (3.12MB/s)                                            Retrieving image: rootfs: 89% (3.14MB/s)                                            Retrieving image: rootfs: 90% (3.16MB/s)                                            Retrieving image: rootfs: 91% (3.18MB/s)                                            Retrieving image: rootfs: 92% (3.20MB/s)                                            Retrieving image: rootfs: 93% (3.22MB/s)                                            Retrieving image: rootfs: 94% (3.23MB/s)                                            Retrieving image: rootfs: 95% (3.25MB/s)                                            Retrieving image: rootfs: 95% (3.27MB/s)                                            Retrieving image: rootfs: 96% (3.28MB/s)                                            Retrieving image: rootfs: 97% (3.30MB/s)                                            Retrieving image: rootfs: 98% (3.32MB/s)                                            Retrieving image: rootfs: 99% (3.34MB/s)                                            Retrieving image: rootfs: 100% (3.35MB/s)                                            Retrieving image: Unpack: 100% (2.80GB/s)                                            Retrieving image: Unpack: 100% (2.80GB/s)                                            Starting web
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson6[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson6[00m$ lxc exec web /bin/bash
+[?2004l]0;root@web: ~root@web:~# apt update
+[33m0% [Working][0m            Hit:1 http://archive.ubuntu.com/ubuntu bionic InRelease
+[33m0% [Waiting for headers] [Waiting for headers][0m[33m0% [1 InRelease gpgv 242 kB] [Waiting for headers] [Waiting for headers][0m                                                                        Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [102 kB]
+[33m0% [1 InRelease gpgv 242 kB] [Waiting for headers] [2 InRelease 2596 B/102 kB 3%][0m                                                                                 Get:3 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [102 kB]
+[33m0% [1 InRelease gpgv 242 kB] [3 InRelease 2596 B/102 kB 3%] [2 InRelease 14.2 kB/102 kB 14%][0m[33m                                                                                            0% [3 InRelease 36.0 kB/102 kB 35%] [2 InRelease 60.7 kB/102 kB 60%][0m[33m                                                                    0% [3 InRelease 62.1 kB/102 kB 61%][0m[33m0% [2 InRelease gpgv 102 kB] [3 InRelease 62.1 kB/102 kB 61%][0m[33m                                                             0% [2 InRelease gpgv 102 kB] [Waiting for headers][0m[33m                                                  0% [Waiting for headers][0m[33m0% [3 InRelease gpgv 102 kB] [Waiting for headers][0m                                                  Get:4 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [102 kB]
+[33m0% [3 InRelease gpgv 102 kB] [4 InRelease 2596 B/102 kB 3%] [Waiting for headers][0m[33m                                                                                 0% [3 InRelease gpgv 102 kB] [Waiting for headers][0m                                                  Get:5 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2717 kB]
+[33m0% [3 InRelease gpgv 102 kB] [Waiting for headers] [5 Packages 2693 B/2717 kB 0%][0m[33m                                                                                 0% [Waiting for headers] [5 Packages 89.8 kB/2717 kB 3%][0m[33m0% [4 InRelease gpgv 102 kB] [Waiting for headers] [5 Packages 89.8 kB/2717 kB 3%][0m                                                                                  Get:6 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB]
+[33m0% [4 InRelease gpgv 102 kB] [6 Packages 2663 B/8570 kB 0%] [5 Packages 116 kB/2717 kB 4%][0m[33m                                                                                          17% [6 Packages 220 kB/8570 kB 3%] [5 Packages 345 kB/2717 kB 13%][0m[33m29% [6 Packages 2301 kB/8570 kB 27%] [5 Packages 2425 kB/2717 kB 89%][0m[33m                                                                     34% [6 Packages 3999 kB/8570 kB 47%][0m[33m34% [5 Packages store 0 B] [6 Packages 4006 kB/8570 kB 47%] [Waiting for headers][0m                                                                                 Get:7 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [467 kB]
+[33m35% [5 Packages store 0 B] [6 Packages 4129 kB/8570 kB 48%] [7 Translation-en 2695 B/467 kB 1%][0m[33m                                                                                               36% [6 Packages 4531 kB/8570 kB 53%] [7 Translation-en 49.2 kB/467 kB 11%][0m[33m                                                                          38% [6 Packages 4717 kB/8570 kB 55%] [Waiting for headers][0m                                                          Get:8 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [1317 kB]
+[33m38% [6 Packages 4717 kB/8570 kB 55%] [8 Packages 20.1 kB/1317 kB 2%][0m[33m38% [7 Translation-en store 0 B] [6 Packages 4717 kB/8570 kB 55%] [8 Packages 20.1 kB/1317 kB 2%][0m[33m                                                                                                 41% [6 Packages 5278 kB/8570 kB 62%] [8 Packages 312 kB/1317 kB 24%][0m[33m                                                                    52% [6 Packages 8240 kB/8570 kB 96%] [Waiting for headers][0m                                                          Get:9 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [182 kB]
+[33m52% [6 Packages 8240 kB/8570 kB 96%] [9 Translation-en 48.8 kB/182 kB 27%][0m[33m52% [8 Packages store 0 B] [6 Packages 8240 kB/8570 kB 96%] [9 Translation-en 48.8 kB/182 kB 27%][0m[33m                                                                                                 53% [8 Packages store 0 B] [6 Packages 8253 kB/8570 kB 96%] [Waiting for headers][0m                                                                                 Get:10 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1303 kB]
+[33m53% [8 Packages store 0 B] [6 Packages 8253 kB/8570 kB 96%] [10 Packages 63.2 kB/1303 kB 5%][0m[33m                                                                                            54% [6 Packages 8432 kB/8570 kB 98%] [10 Packages 327 kB/1303 kB 25%][0m[33m54% [9 Translation-en store 0 B] [6 Packages 8432 kB/8570 kB 98%] [10 Packages 327 kB/1303 kB 25%][0m[33m                                                                                                  56% [9 Translation-en store 0 B] [Waiting for headers] [10 Packages 650 kB/1303 kB 50%][0m                                                                                       Get:11 http://archive.ubuntu.com/ubuntu bionic/universe Translation-en [4941 kB]
+[33m56% [9 Translation-en store 0 B] [11 Translation-en 65.5 kB/4941 kB 1%] [10 Packages 650 kB/1303 kB 50%][0m[33m                                                                                                        57% [11 Translation-en 269 kB/4941 kB 5%] [10 Packages 650 kB/1303 kB 50%][0m[33m57% [6 Packages store 0 B] [11 Translation-en 269 kB/4941 kB 5%] [10 Packages 650 kB/1303 kB 50%][0m[33m                                                                                                 60% [6 Packages store 0 B] [11 Translation-en 677 kB/4941 kB 14%] [Waiting for headers][0m                                                                                       Get:12 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [308 kB]
+[33m60% [6 Packages store 0 B] [11 Translation-en 677 kB/4941 kB 14%] [12 Translation-en 65.5 kB/308 kB 21%][0m[33m                                                                                                        62% [6 Packages store 0 B] [11 Translation-en 1287 kB/4941 kB 26%] [Waiting for headers][0m                                                                                        Get:13 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [19.8 kB]
+[33m62% [6 Packages store 0 B] [11 Translation-en 1287 kB/4941 kB 26%] [13 Packages 19.8 kB/19.8 kB 100%][0m[33m                                                                                                     62% [6 Packages store 0 B] [11 Translation-en 1287 kB/4941 kB 26%] [Waiting for headers][0m                                                                                        Get:14 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [3928 B]
+[33m                                                                                        62% [6 Packages store 0 B] [11 Translation-en 1287 kB/4941 kB 26%][0m[33m                                                                  73% [6 Packages store 0 B] [Waiting for headers][0m                                                Get:15 http://archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+[33m73% [6 Packages store 0 B] [15 Packages 47.0 kB/151 kB 31%][0m[33m                                                           73% [6 Packages store 0 B] [Waiting for headers][0m                                                Get:16 http://archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB]
+[33m73% [6 Packages store 0 B] [16 Translation-en 2197 B/108 kB 2%][0m[33m                                                               74% [6 Packages store 0 B] [Waiting for headers][0m                                                Get:17 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [3044 kB]
+[33m74% [6 Packages store 0 B] [17 Packages 43.5 kB/3044 kB 1%][0m[33m                                                           77% [17 Packages 1244 kB/3044 kB 41%][0m[33m77% [10 Packages store 0 B] [17 Packages 1244 kB/3044 kB 41%][0m[33m                                                             80% [17 Packages 2169 kB/3044 kB 71%][0m[33m80% [12 Translation-en store 0 B] [17 Packages 2169 kB/3044 kB 71%][0m[33m                                                                   82% [17 Packages 2570 kB/3044 kB 84%][0m[33m82% [13 Packages store 0 B] [17 Packages 2570 kB/3044 kB 84%][0m[33m                                                             82% [17 Packages 2570 kB/3044 kB 84%][0m[33m82% [14 Translation-en store 0 B] [17 Packages 2570 kB/3044 kB 84%][0m[33m                                                                   82% [17 Packages 2570 kB/3044 kB 84%][0m[33m82% [11 Translation-en store 0 B] [17 Packages 2570 kB/3044 kB 84%][0m[33m                                                                   83% [11 Translation-en store 0 B] [Waiting for headers][0m                                                       Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [554 kB]
+[33m84% [11 Translation-en store 0 B] [18 Translation-en 46.5 kB/554 kB 8%][0m[33m                                                                       85% [11 Translation-en store 0 B] [Waiting for headers][0m                                                       Get:19 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [1347 kB]
+[33m85% [11 Translation-en store 0 B] [19 Packages 55.7 kB/1347 kB 4%][0m[33m                                                                  89% [11 Translation-en store 0 B] [Waiting for headers][0m                                                       Get:20 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [187 kB]
+[33m89% [11 Translation-en store 0 B] [20 Translation-en 18.9 kB/187 kB 10%][0m[33m                                                                        89% [11 Translation-en store 0 B] [Waiting for headers][0m                                                       Get:21 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1914 kB]
+[33m89% [11 Translation-en store 0 B] [21 Packages 28.7 kB/1914 kB 1%][0m[33m                                                                  92% [21 Packages 782 kB/1914 kB 41%][0m[33m92% [15 Packages store 0 B] [21 Packages 782 kB/1914 kB 41%][0m[33m                                                            93% [21 Packages 1098 kB/1914 kB 57%][0m[33m93% [16 Translation-en store 0 B] [21 Packages 1098 kB/1914 kB 57%][0m[33m                                                                   93% [21 Packages 1098 kB/1914 kB 57%][0m[33m93% [17 Packages store 0 B] [21 Packages 1098 kB/1914 kB 57%][0m[33m                                                             96% [17 Packages store 0 B] [Waiting for headers][0m                                                 Get:22 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [421 kB]
+[33m96% [17 Packages store 0 B] [22 Translation-en 14.8 kB/421 kB 4%][0m[33m                                                                 97% [17 Packages store 0 B] [Waiting for headers][0m                                                 Get:23 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [25.6 kB]
+[33m97% [17 Packages store 0 B] [23 Packages 25.6 kB/25.6 kB 100%][0m[33m                                                              97% [17 Packages store 0 B] [Waiting for headers][0m                                                 Get:24 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6088 B]
+[33m97% [17 Packages store 0 B] [24 Translation-en 6088 B/6088 B 100%][0m[33m                                                                  97% [17 Packages store 0 B] [Waiting for headers][0m                                                 Get:25 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [53.3 kB]
+[33m97% [17 Packages store 0 B] [25 Packages 20.6 kB/53.3 kB 39%][0m[33m                                                             97% [17 Packages store 0 B][0m                           Get:26 http://archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [14.6 kB]
+[33m97% [17 Packages store 0 B] [26 Translation-en 14.6 kB/14.6 kB 100%][0m[33m                                                                    97% [17 Packages store 0 B] [Waiting for headers][0m                                                 Get:27 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [18.2 kB]
+[33m97% [17 Packages store 0 B] [27 Packages 17.8 kB/18.2 kB 98%][0m[33m                                                             97% [17 Packages store 0 B] [Waiting for headers][0m                                                 Get:28 http://archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [8668 B]
+[33m97% [17 Packages store 0 B] [28 Translation-en 190 B/8668 B 2%][0m[33m                                                               97% [17 Packages store 0 B][0m[33m                           97% [Working][0m[33m97% [18 Translation-en store 0 B][0m[33m                                 98% [Working][0m[33m98% [19 Packages store 0 B][0m[33m                           98% [Working][0m[33m98% [20 Translation-en store 0 B][0m[33m                                 98% [Working][0m[33m98% [21 Packages store 0 B][0m[33m                           98% [Working][0m[33m98% [22 Translation-en store 0 B][0m[33m                                 99% [Working][0m[33m99% [23 Packages store 0 B][0m[33m                           99% [Working][0m[33m99% [24 Translation-en store 0 B][0m[33m                                 99% [Working][0m[33m99% [25 Packages store 0 B][0m[33m                           99% [Working][0m[33m99% [26 Translation-en store 0 B][0m[33m                                 100% [Working][0m[33m100% [27 Packages store 0 B][0m[33m                            100% [Working][0m[33m100% [28 Translation-en store 0 B][0m[33m                                  100% [Working][0m              Fetched 28.0 MB in 5s (5307 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 30%Reading package lists... 30%Reading package lists... 44%Reading package lists... 44%Reading package lists... 44%Reading package lists... 44%Reading package lists... 44%Reading package lists... 44%Reading package lists... 50%Reading package lists... 53%Reading package lists... 53%Reading package lists... 59%Reading package lists... 59%Reading package lists... 64%Reading package lists... 64%Reading package lists... 66%Reading package lists... 66%Reading package lists... 71%Reading package lists... 71%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 82%Reading package lists... 82%Reading package lists... 88%Reading package lists... 88%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+9 packages can be upgraded. Run 'apt list --upgradable' to see them.
+]0;root@web: ~root@web:~# apt upgrade
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Calculating upgrade... 0%Calculating upgrade... 10%Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  efibootmgr libefiboot1 libefivar1 libfreetype6
+Use 'apt autoremove' to remove them.
+The following security updates require Ubuntu Pro with 'esm-infra' enabled:
+  libpam0g screen libkrb5-3 libgssapi-krb5-2 libpython3.6-minimal
+  libnghttp2-14 libisccfg160 vim-common libcurl4 libapt-inst2.0 libldap-2.4-2
+  libpam-modules openssl libsystemd0 apt libpam-cap libsqlite3-0
+  libpython3.6-stdlib libelf1 python3-urllib3 libirs160 bind9-host open-iscsi
+  dnsutils libncurses5 dnsmasq-base libc6 libpython3.6 python3.6 open-vm-tools
+  openssh-sftp-server gawk libk5crypto3 libisc169 python3-idna udev locales
+  passwd procps libklibc libpam-runtime libapt-pkg5.0 libncursesw5 libprocps6
+  libx11-6 python3-requests libudev1 libapparmor1 lxd krb5-locales
+  python3.6-minimal libisc-export169 python3-cryptography busybox-static
+  libc-bin libtinfo5 libkrb5support0 libcap2 tar systemd-sysv libcap2-bin
+  libldap-common liblwres160 vim-runtime vim libpam-systemd distro-info-data
+  ncurses-term systemd login xxd ncurses-bin libpam-modules-bin openssh-server
+  apt-utils libx11-data openssh-client libdns-export1100 libnss-systemd
+  libglib2.0-data ncurses-base libxml2 multiarch-support libgnutls30 vim-tiny
+  apparmor dns-root-data libisccc160 wget libssl1.1 libbind9-160
+  python3-jinja2 accountsservice libdns1100 curl klibc-utils lxd-client
+  libglib2.0-0 uidmap libcurl3-gnutls less libaccountsservice0 libssl1.0.0
+  tzdata busybox-initramfs
+Learn more about Ubuntu Pro at https://ubuntu.com/pro
+The following NEW packages will be installed:
+  ubuntu-pro-client ubuntu-pro-client-l10n
+The following packages will be upgraded:
+  apparmor base-files distro-info-data libapparmor1 motd-news-config python3-update-manager ubuntu-advantage-tools update-manager-core
+  update-notifier-common
+9 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+3 standard LTS security updates
+Need to get 1040 kB of archives.
+After this operation, 483 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 motd-news-config all 10.1ubuntu2.12 [4440 B]
+[33m0% [1 motd-news-config 4440 B/4440 B 100%][0m[33m                                          2% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 base-files amd64 10.1ubuntu2.12 [60.4 kB]
+[33m3% [2 base-files 5518 B/60.4 kB 9%][0m[33m                                   9% [Working][0m            Get:3 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 update-manager-core all 1:18.04.12 [8512 B]
+[33m9% [3 update-manager-core 49 B/8512 B 1%][0m[33m                                         11% [Waiting for headers][0m                         Get:4 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-update-manager all 1:18.04.12 [35.3 kB]
+[33m11% [4 python3-update-manager 2614 B/35.3 kB 7%][0m[33m                                                16% [Waiting for headers][0m                         Get:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 distro-info-data all 0.37ubuntu0.18 [5060 B]
+[33m16% [5 distro-info-data 1849 B/5060 B 37%][0m[33m                                          18% [Waiting for headers][0m                         Get:6 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 ubuntu-advantage-tools all 32.3.1~18.04 [11.0 kB]
+[33m18% [6 ubuntu-advantage-tools 2307 B/11.0 kB 21%][0m[33m                                                 20% [Waiting for headers][0m                         Get:7 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 ubuntu-pro-client amd64 32.3.1~18.04 [207 kB]
+[33m22% [7 ubuntu-pro-client 14.2 kB/207 kB 7%][0m[33m                                           38% [Waiting for headers][0m                         Get:8 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 update-notifier-common all 3.192.1.21 [172 kB]
+[33m38% [8 update-notifier-common 440 B/172 kB 0%][0m[33m                                              53% [Waiting for headers][0m                         Get:9 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libapparmor1 amd64 2.12-4ubuntu5.3 [30.7 kB]
+[33m54% [9 libapparmor1 4066 B/30.7 kB 13%][0m[33m                                       57% [Working][0m             Get:10 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 ubuntu-pro-client-l10n amd64 32.3.1~18.04 [18.5 kB]
+[33m58% [10 ubuntu-pro-client-l10n 3592 B/18.5 kB 19%][0m[33m                                                  61% [Working][0m             Get:11 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apparmor amd64 2.12-4ubuntu5.3 [488 kB]
+[33m61% [11 apparmor 2252 B/488 kB 0%][0m[33m                                  100% [Working][0m              Fetched 1040 kB in 1s (1209 kB/s)
+Preconfiguring packages ...
+
+7[0;44r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 29233 files and directories currently installed.)
+Preparing to unpack .../motd-news-config_10.1ubuntu2.12_all.deb ...
+7[45;0f[42m[30mProgress: [  0%][49m[39m [................................................................................................................................] 87[45;0f[42m[30mProgress: [  2%][49m[39m [##..............................................................................................................................] 8Unpacking motd-news-config (10.1ubuntu2.12) over (10.1ubuntu2.11) ...
+7[45;0f[42m[30mProgress: [  4%][49m[39m [####............................................................................................................................] 87[45;0f[42m[30mProgress: [  5%][49m[39m [######..........................................................................................................................] 8Preparing to unpack .../base-files_10.1ubuntu2.12_amd64.deb ...
+Warning: Stopping motd-news.service, but it can still be activated by:
+  motd-news.timer
+7[45;0f[42m[30mProgress: [  7%][49m[39m [#########.......................................................................................................................] 8Unpacking base-files (10.1ubuntu2.12) over (10.1ubuntu2.11) ...
+7[45;0f[42m[30mProgress: [  9%][49m[39m [###########.....................................................................................................................] 87[45;0f[42m[30mProgress: [ 11%][49m[39m [#############...................................................................................................................] 8Setting up base-files (10.1ubuntu2.12) ...
+Installing new version of config file /etc/update-motd.d/10-help-text ...
+7[45;0f[42m[30mProgress: [ 13%][49m[39m [################................................................................................................................] 8motd-news.service is a disabled or a static unit, not starting it.
+7[45;0f[42m[30mProgress: [ 14%][49m[39m [##################..............................................................................................................] 8(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 29233 files and directories currently installed.)
+Preparing to unpack .../0-update-manager-core_1%3a18.04.12_all.deb ...
+7[45;0f[42m[30mProgress: [ 16%][49m[39m [####################............................................................................................................] 8Unpacking update-manager-core (1:18.04.12) over (1:18.04.11.13) ...
+7[45;0f[42m[30mProgress: [ 18%][49m[39m [######################..........................................................................................................] 87[45;0f[42m[30mProgress: [ 20%][49m[39m [#########################.......................................................................................................] 8Preparing to unpack .../1-python3-update-manager_1%3a18.04.12_all.deb ...
+7[45;0f[42m[30mProgress: [ 21%][49m[39m [###########################.....................................................................................................] 8Unpacking python3-update-manager (1:18.04.12) over (1:18.04.11.13) ...
+7[45;0f[42m[30mProgress: [ 23%][49m[39m [#############################...................................................................................................] 87[45;0f[42m[30mProgress: [ 25%][49m[39m [################################................................................................................................] 8Preparing to unpack .../2-distro-info-data_0.37ubuntu0.18_all.deb ...
+7[45;0f[42m[30mProgress: [ 27%][49m[39m [##################################..............................................................................................] 8Unpacking distro-info-data (0.37ubuntu0.18) over (0.37ubuntu0.17) ...
+7[45;0f[42m[30mProgress: [ 29%][49m[39m [####################################............................................................................................] 87[45;0f[42m[30mProgress: [ 30%][49m[39m [######################################..........................................................................................] 8Preparing to unpack .../3-ubuntu-advantage-tools_32.3.1~18.04_all.deb ...
+7[45;0f[42m[30mProgress: [ 32%][49m[39m [#########################################.......................................................................................] 8Unpacking ubuntu-advantage-tools (32.3.1~18.04) over (27.14.4~18.04) ...
+[1mdpkg:[0m [1;33mwarning:[0m unable to delete old directory '/var/lib/ubuntu-advantage': Directory not empty
+[1mdpkg:[0m [1;33mwarning:[0m unable to delete old directory '/etc/ubuntu-advantage': Directory not empty
+7[45;0f[42m[30mProgress: [ 34%][49m[39m [###########################################.....................................................................................] 87[45;0f[42m[30mProgress: [ 36%][49m[39m [#############################################...................................................................................] 8Selecting previously unselected package ubuntu-pro-client.
+Preparing to unpack .../4-ubuntu-pro-client_32.3.1~18.04_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 38%][49m[39m [################################################................................................................................] 8Unpacking ubuntu-pro-client (32.3.1~18.04) ...
+7[45;0f[42m[30mProgress: [ 39%][49m[39m [##################################################..............................................................................] 87[45;0f[42m[30mProgress: [ 41%][49m[39m [####################################################............................................................................] 8Preparing to unpack .../5-update-notifier-common_3.192.1.21_all.deb ...
+7[45;0f[42m[30mProgress: [ 43%][49m[39m [######################################################..........................................................................] 8Unpacking update-notifier-common (3.192.1.21) over (3.192.1.19) ...
+7[45;0f[42m[30mProgress: [ 45%][49m[39m [#########################################################.......................................................................] 87[45;0f[42m[30mProgress: [ 46%][49m[39m [###########################################################.....................................................................] 8Preparing to unpack .../6-libapparmor1_2.12-4ubuntu5.3_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 48%][49m[39m [#############################################################...................................................................] 8Unpacking libapparmor1:amd64 (2.12-4ubuntu5.3) over (2.12-4ubuntu5.1) ...
+7[45;0f[42m[30mProgress: [ 50%][49m[39m [################################################################................................................................] 87[45;0f[42m[30mProgress: [ 52%][49m[39m [##################################################################..............................................................] 8Selecting previously unselected package ubuntu-pro-client-l10n.
+Preparing to unpack .../7-ubuntu-pro-client-l10n_32.3.1~18.04_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 54%][49m[39m [####################################################################............................................................] 8Unpacking ubuntu-pro-client-l10n (32.3.1~18.04) ...
+7[45;0f[42m[30mProgress: [ 55%][49m[39m [######################################################################..........................................................] 87[45;0f[42m[30mProgress: [ 57%][49m[39m [#########################################################################.......................................................] 8Preparing to unpack .../8-apparmor_2.12-4ubuntu5.3_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 59%][49m[39m [###########################################################################.....................................................] 8Unpacking apparmor (2.12-4ubuntu5.3) over (2.12-4ubuntu5.1) ...
+7[45;0f[42m[30mProgress: [ 61%][49m[39m [#############################################################################...................................................] 87[45;0f[42m[30mProgress: [ 63%][49m[39m [################################################################################................................................] 8Setting up python3-update-manager (1:18.04.12) ...
+7[45;0f[42m[30mProgress: [ 64%][49m[39m [##################################################################################..............................................] 87[45;0f[42m[30mProgress: [ 66%][49m[39m [####################################################################################............................................] 8Setting up apparmor (2.12-4ubuntu5.3) ...
+7[45;0f[42m[30mProgress: [ 68%][49m[39m [######################################################################################..........................................] 8find: ‘’: No such file or directory
+Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+7[45;0f[42m[30mProgress: [ 70%][49m[39m [#########################################################################################.......................................] 8Setting up distro-info-data (0.37ubuntu0.18) ...
+7[45;0f[42m[30mProgress: [ 71%][49m[39m [###########################################################################################.....................................] 87[45;0f[42m[30mProgress: [ 73%][49m[39m [#############################################################################################...................................] 8Setting up libapparmor1:amd64 (2.12-4ubuntu5.3) ...
+7[45;0f[42m[30mProgress: [ 75%][49m[39m [################################################################################################................................] 87[45;0f[42m[30mProgress: [ 77%][49m[39m [##################################################################################################..............................] 8Setting up motd-news-config (10.1ubuntu2.12) ...
+7[45;0f[42m[30mProgress: [ 79%][49m[39m [####################################################################################################............................] 87[45;0f[42m[30mProgress: [ 80%][49m[39m [######################################################################################################..........................] 8Setting up ubuntu-pro-client (32.3.1~18.04) ...
+7[45;0f[42m[30mProgress: [ 82%][49m[39m [#########################################################################################################.......................] 87[45;0f[42m[30mProgress: [ 84%][49m[39m [###########################################################################################################.....................] 8Setting up ubuntu-advantage-tools (32.3.1~18.04) ...
+7[45;0f[42m[30mProgress: [ 86%][49m[39m [#############################################################################################################...................] 8Removing obsolete conffile /etc/ubuntu-advantage/help_data.yaml ...
+7[45;0f[42m[30mProgress: [ 88%][49m[39m [################################################################################################################................] 8Setting up update-manager-core (1:18.04.12) ...
+7[45;0f[42m[30mProgress: [ 89%][49m[39m [##################################################################################################################..............] 87[45;0f[42m[30mProgress: [ 91%][49m[39m [####################################################################################################################............] 8Setting up update-notifier-common (3.192.1.21) ...
+7[45;0f[42m[30mProgress: [ 93%][49m[39m [######################################################################################################################..........] 87[45;0f[42m[30mProgress: [ 95%][49m[39m [#########################################################################################################################.......] 8Setting up ubuntu-pro-client-l10n (32.3.1~18.04) ...
+7[45;0f[42m[30mProgress: [ 96%][49m[39m [###########################################################################################################################.....] 87[45;0f[42m[30mProgress: [ 98%][49m[39m [#############################################################################################################################...] 8Processing triggers for systemd (237-3ubuntu10.57) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for ureadahead (0.100.0-21) ...
+Processing triggers for install-info (6.5.0.dfsg.1-2) ...
+Processing triggers for plymouth-theme-ubuntu-text (0.9.3-1ubuntu7.18.04.2) ...
+update-initramfs: deferring update (trigger activated)
+Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+Processing triggers for initramfs-tools (0.130ubuntu3.13) ...
+
+7[0;45r8[1A[J]0;root@web: ~root@web:~# apt isntall [K[K[K[K[K[K[Knstall apache2 -y
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  efibootmgr libefiboot1 libefivar1 libfreetype6
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0 ssl-cert
+Suggested packages:
+  www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom openssl-blacklist
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0 ssl-cert
+0 upgraded, 10 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1730 kB of archives.
+After this operation, 7000 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu bionic/main amd64 libapr1 amd64 1.6.3-2 [90.9 kB]
+[33m0% [1 libapr1 8421 B/90.9 kB 9%][0m[33m                                6% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaprutil1 amd64 1.6.1-2ubuntu0.1 [84.6 kB]
+[33m6% [2 libaprutil1 2613 B/84.6 kB 3%][0m[33m                                    12% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-2ubuntu0.1 [10.6 kB]
+[33m12% [3 libaprutil1-dbd-sqlite3 1947 B/10.6 kB 18%][0m[33m                                                  15% [Working][0m             Get:4 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libaprutil1-ldap amd64 1.6.1-2ubuntu0.1 [8752 B]
+[33m15% [4 libaprutil1-ldap 2650 B/8752 B 30%][0m[33m                                          17% [Waiting for headers][0m                         Get:5 http://archive.ubuntu.com/ubuntu bionic/main amd64 liblua5.2-0 amd64 5.2.4-1.1build1 [108 kB]
+[33m17% [5 liblua5.2-0 2318 B/108 kB 2%][0m[33m                                    24% [Working][0m             Get:6 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-bin amd64 2.4.29-1ubuntu4.27 [1071 kB]
+[33m24% [6 apache2-bin 2574 B/1071 kB 0%][0m[33m                                     76% [Waiting for headers][0m                         Get:7 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-utils amd64 2.4.29-1ubuntu4.27 [83.3 kB]
+[33m76% [7 apache2-utils 8141 B/83.3 kB 10%][0m[33m                                        81% [Waiting for headers][0m                         Get:8 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-data all 2.4.29-1ubuntu4.27 [160 kB]
+[33m82% [8 apache2-data 3824 B/160 kB 2%][0m[33m                                     91% [Waiting for headers][0m                         Get:9 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2 amd64 2.4.29-1ubuntu4.27 [95.1 kB]
+[33m91% [9 apache2 3805 B/95.1 kB 4%][0m[33m                                 97% [Waiting for headers][0m                         Get:10 http://archive.ubuntu.com/ubuntu bionic/main amd64 ssl-cert all 1.0.39 [17.0 kB]
+[33m97% [10 ssl-cert 5990 B/17.0 kB 35%][0m[33m                                    100% [Working][0m              Fetched 1730 kB in 1s (1782 kB/s)
+Preconfiguring packages ...
+
+7[0;44r8[1ASelecting previously unselected package libapr1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 29321 files and directories currently installed.)
+Preparing to unpack .../0-libapr1_1.6.3-2_amd64.deb ...
+7[45;0f[42m[30mProgress: [  0%][49m[39m [................................................................................................................................] 87[45;0f[42m[30mProgress: [  2%][49m[39m [##..............................................................................................................................] 8Unpacking libapr1:amd64 (1.6.3-2) ...
+7[45;0f[42m[30mProgress: [  4%][49m[39m [#####...........................................................................................................................] 87[45;0f[42m[30mProgress: [  6%][49m[39m [#######.........................................................................................................................] 8Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../1-libaprutil1_1.6.1-2ubuntu0.1_amd64.deb ...
+7[45;0f[42m[30mProgress: [  8%][49m[39m [##########......................................................................................................................] 8Unpacking libaprutil1:amd64 (1.6.1-2ubuntu0.1) ...
+7[45;0f[42m[30mProgress: [ 10%][49m[39m [############....................................................................................................................] 87[45;0f[42m[30mProgress: [ 12%][49m[39m [###############.................................................................................................................] 8Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../2-libaprutil1-dbd-sqlite3_1.6.1-2ubuntu0.1_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 14%][49m[39m [#################...............................................................................................................] 8Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-2ubuntu0.1) ...
+7[45;0f[42m[30mProgress: [ 16%][49m[39m [####################............................................................................................................] 87[45;0f[42m[30mProgress: [ 18%][49m[39m [######################..........................................................................................................] 8Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../3-libaprutil1-ldap_1.6.1-2ubuntu0.1_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 20%][49m[39m [#########################.......................................................................................................] 8Unpacking libaprutil1-ldap:amd64 (1.6.1-2ubuntu0.1) ...
+7[45;0f[42m[30mProgress: [ 22%][49m[39m [###########################.....................................................................................................] 87[45;0f[42m[30mProgress: [ 24%][49m[39m [##############################..................................................................................................] 8Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../4-liblua5.2-0_5.2.4-1.1build1_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 25%][49m[39m [################################................................................................................................] 8Unpacking liblua5.2-0:amd64 (5.2.4-1.1build1) ...
+7[45;0f[42m[30mProgress: [ 27%][49m[39m [###################################.............................................................................................] 87[45;0f[42m[30mProgress: [ 29%][49m[39m [#####################################...........................................................................................] 8Selecting previously unselected package apache2-bin.
+Preparing to unpack .../5-apache2-bin_2.4.29-1ubuntu4.27_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 31%][49m[39m [########################################........................................................................................] 8Unpacking apache2-bin (2.4.29-1ubuntu4.27) ...
+7[45;0f[42m[30mProgress: [ 33%][49m[39m [##########################################......................................................................................] 87[45;0f[42m[30mProgress: [ 35%][49m[39m [#############################################...................................................................................] 8Selecting previously unselected package apache2-utils.
+Preparing to unpack .../6-apache2-utils_2.4.29-1ubuntu4.27_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 37%][49m[39m [###############################################.................................................................................] 8Unpacking apache2-utils (2.4.29-1ubuntu4.27) ...
+7[45;0f[42m[30mProgress: [ 39%][49m[39m [##################################################..............................................................................] 87[45;0f[42m[30mProgress: [ 41%][49m[39m [####################################################............................................................................] 8Selecting previously unselected package apache2-data.
+Preparing to unpack .../7-apache2-data_2.4.29-1ubuntu4.27_all.deb ...
+7[45;0f[42m[30mProgress: [ 43%][49m[39m [#######################################################.........................................................................] 8Unpacking apache2-data (2.4.29-1ubuntu4.27) ...
+7[45;0f[42m[30mProgress: [ 45%][49m[39m [#########################################################.......................................................................] 87[45;0f[42m[30mProgress: [ 47%][49m[39m [############################################################....................................................................] 8Selecting previously unselected package apache2.
+Preparing to unpack .../8-apache2_2.4.29-1ubuntu4.27_amd64.deb ...
+7[45;0f[42m[30mProgress: [ 49%][49m[39m [##############################################################..................................................................] 8Unpacking apache2 (2.4.29-1ubuntu4.27) ...
+7[45;0f[42m[30mProgress: [ 51%][49m[39m [#################################################################...............................................................] 87[45;0f[42m[30mProgress: [ 53%][49m[39m [###################################################################.............................................................] 8Selecting previously unselected package ssl-cert.
+Preparing to unpack .../9-ssl-cert_1.0.39_all.deb ...
+7[45;0f[42m[30mProgress: [ 55%][49m[39m [######################################################################..........................................................] 8Unpacking ssl-cert (1.0.39) ...
+7[45;0f[42m[30mProgress: [ 57%][49m[39m [########################################################################........................................................] 87[45;0f[42m[30mProgress: [ 59%][49m[39m [###########################################################################.....................................................] 8Setting up libapr1:amd64 (1.6.3-2) ...
+7[45;0f[42m[30mProgress: [ 61%][49m[39m [#############################################################################...................................................] 87[45;0f[42m[30mProgress: [ 63%][49m[39m [################################################################################................................................] 8Setting up apache2-data (2.4.29-1ubuntu4.27) ...
+7[45;0f[42m[30mProgress: [ 65%][49m[39m [##################################################################################..............................................] 87[45;0f[42m[30mProgress: [ 67%][49m[39m [#####################################################################################...........................................] 8Setting up ssl-cert (1.0.39) ...
+7[45;0f[42m[30mProgress: [ 69%][49m[39m [#######################################################################################.........................................] 87[45;0f[42m[30mProgress: [ 71%][49m[39m [##########################################################################################......................................] 8Setting up libaprutil1:amd64 (1.6.1-2ubuntu0.1) ...
+7[45;0f[42m[30mProgress: [ 73%][49m[39m [############################################################################################....................................] 87[45;0f[42m[30mProgress: [ 75%][49m[39m [###############################################################################################.................................] 8Setting up liblua5.2-0:amd64 (5.2.4-1.1build1) ...
+7[45;0f[42m[30mProgress: [ 76%][49m[39m [#################################################################################################...............................] 87[45;0f[42m[30mProgress: [ 78%][49m[39m [####################################################################################################............................] 8Setting up libaprutil1-ldap:amd64 (1.6.1-2ubuntu0.1) ...
+7[45;0f[42m[30mProgress: [ 80%][49m[39m [######################################################################################################..........................] 87[45;0f[42m[30mProgress: [ 82%][49m[39m [#########################################################################################################.......................] 8Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-2ubuntu0.1) ...
+7[45;0f[42m[30mProgress: [ 84%][49m[39m [###########################################################################################################.....................] 87[45;0f[42m[30mProgress: [ 86%][49m[39m [##############################################################################################################..................] 8Setting up apache2-utils (2.4.29-1ubuntu4.27) ...
+7[45;0f[42m[30mProgress: [ 88%][49m[39m [################################################################################################################................] 87[45;0f[42m[30mProgress: [ 90%][49m[39m [###################################################################################################################.............] 8Setting up apache2-bin (2.4.29-1ubuntu4.27) ...
+7[45;0f[42m[30mProgress: [ 92%][49m[39m [#####################################################################################################################...........] 87[45;0f[42m[30mProgress: [ 94%][49m[39m [########################################################################################################################........] 8Setting up apache2 (2.4.29-1ubuntu4.27) ...
+7[45;0f[42m[30mProgress: [ 96%][49m[39m [##########################################################################################################################......] 8Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+7[45;0f[42m[30mProgress: [ 98%][49m[39m [#############################################################################################################################...] 8Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+Processing triggers for systemd (237-3ubuntu10.57) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for ufw (0.36-0ubuntu0.18.04.2) ...
+Processing triggers for ureadahead (0.100.0-21) ...
+
+7[0;45r8[1A[J]0;root@web: ~root@web:~# serv[K[K[Ks[K[Ksyt[Kstemctl ap[K[Kstatus apache2
+[?1h=[0;1;32m●[0m apache2.service - The Apache HTTP Server[m
+   Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)[m
+  Drop-In: /lib/systemd/system/apache2.service.d[m
+           └─apache2-systemd.conf[m
+   Active: [0;1;32mactive (running)[0m since Mon 2024-07-22 07:18:06 UTC; 13s ago[m
+ Main PID: 2674 (apache2)[m
+    Tasks: 55 (limit: 4554)[m
+   CGroup: /system.slice/apache2.service[m
+           ├─2674 /usr/sbin/apache2 -k start[m
+           ├─2675 /usr/sbin/apache2 -k start[m
+           └─2677 /usr/sbin/apache2 -k start[m
+[m
+Jul 22 07:18:06 web systemd[1]: Starting The Apache HTTP Server...[m
+Jul 22 07:18:06 web systemd[1]: Started The Apache HTTP Server.[m
+[K[?1l>]0;root@web: ~root@web:~# 
+]0;root@web: ~root@web:~# ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+8: eth0@if9: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 00:16:3e:c1:12:a0 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 10.8.136.157/24 brd 10.8.136.255 scope global dynamic eth0
+       valid_lft 3389sec preferred_lft 3389sec
+    inet6 fd42:aa5b:9ef:9cab:216:3eff:fec1:12a0/64 scope global mngtmpaddr noprefixroute 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::216:3eff:fec1:12a0/64 scope link 
+       valid_lft forever preferred_lft forever
+]0;root@web: ~root@web:~# curl http://localgho[K[K[Khost
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2016-11-16
+    See: https://launchpad.net/bugs/1288690
+  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Apache2 Ubuntu Default Page: It works</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    </style>
+  </head>
+  <body>
+    <div class="main_page">
+      <div class="page_header floating_element">
+        <img src="/icons/ubuntu-logo.png" alt="Ubuntu Logo" class="floating_element"/>
+        <span class="floating_element">
+          Apache2 Ubuntu Default Page
+        </span>
+      </div>
+<!--      <div class="table_of_contents floating_element">
+        <div class="section_header section_header_grey">
+          TABLE OF CONTENTS
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#about">About</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#changes">Changes</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#scope">Scope</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#files">Config files</a>
+        </div>
+      </div>
+-->
+      <div class="content_section floating_element">
+
+
+        <div class="section_header section_header_red">
+          <div id="about"></div>
+          It works!
+        </div>
+        <div class="content_section_text">
+          <p>
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Ubuntu systems.
+                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+                packaging is derived.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should <b>replace this file</b> (located at
+                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+          </p>
+
+
+          <p>
+                If you are a normal user of this web site and don't know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site's administrator.
+          </p>
+
+        </div>
+        <div class="section_header">
+          <div id="changes"></div>
+                Configuration Overview
+        </div>
+        <div class="content_section_text">
+          <p>
+                Ubuntu's Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Ubuntu tools. The configuration system is
+                <b>fully documented in
+                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
+                package was installed on this server.
+
+          </p>
+          <p>
+                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+          </p>
+          <pre>
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          </pre>
+          <ul>
+                        <li>
+                           <tt>apache2.conf</tt> is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        </li>
+
+                        <li>
+                           <tt>ports.conf</tt> is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        </li>
+
+                        <li>
+                           Configuration files in the <tt>mods-enabled/</tt>,
+                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        </li>
+
+                        <li>
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           <tt>
+                                a2enmod,
+                                a2dismod,
+                           </tt>
+                           <tt>
+                                a2ensite,
+                                a2dissite,
+                            </tt>
+                                and
+                           <tt>
+                                a2enconf,
+                                a2disconf
+                           </tt>. See their respective man pages for detailed information.
+                        </li>
+
+                        <li>
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
+                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+                           default configuration.
+                        </li>
+          </ul>
+        </div>
+
+        <div class="section_header">
+            <div id="docroot"></div>
+                Document Roots
+        </div>
+
+        <div class="content_section_text">
+            <p>
+                By default, Ubuntu does not allow access through the web browser to
+                <em>any</em> file apart of those located in <tt>/var/www</tt>,
+                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
+                directories (when enabled) and <tt>/usr/share</tt> (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
+                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+            </p>
+            <p>
+                The default Ubuntu document root is <tt>/var/www/html</tt>. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            </p>
+        </div>
+
+        <div class="section_header">
+          <div id="bugs"></div>
+                Reporting Problems
+        </div>
+        <div class="content_section_text">
+          <p>
+                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
+                Apache2 package with Ubuntu. However, check <a
+                href="https://bugs.launchpad.net/ubuntu/+source/apache2"
+                rel="nofollow">existing bug reports</a> before reporting a new bug.
+          </p>
+          <p>
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          </p>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <div class="validator">
+    </div>
+  </body>
+</html>
+
+]0;root@web: ~root@web:~# exit
+exit
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson6[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson6[00m$ curl http://10.8.137[K6.156[K7
+[?2004l
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2016-11-16
+    See: https://launchpad.net/bugs/1288690
+  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Apache2 Ubuntu Default Page: It works</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    </style>
+  </head>
+  <body>
+    <div class="main_page">
+      <div class="page_header floating_element">
+        <img src="/icons/ubuntu-logo.png" alt="Ubuntu Logo" class="floating_element"/>
+        <span class="floating_element">
+          Apache2 Ubuntu Default Page
+        </span>
+      </div>
+<!--      <div class="table_of_contents floating_element">
+        <div class="section_header section_header_grey">
+          TABLE OF CONTENTS
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#about">About</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#changes">Changes</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#scope">Scope</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#files">Config files</a>
+        </div>
+      </div>
+-->
+      <div class="content_section floating_element">
+
+
+        <div class="section_header section_header_red">
+          <div id="about"></div>
+          It works!
+        </div>
+        <div class="content_section_text">
+          <p>
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Ubuntu systems.
+                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+                packaging is derived.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should <b>replace this file</b> (located at
+                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+          </p>
+
+
+          <p>
+                If you are a normal user of this web site and don't know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site's administrator.
+          </p>
+
+        </div>
+        <div class="section_header">
+          <div id="changes"></div>
+                Configuration Overview
+        </div>
+        <div class="content_section_text">
+          <p>
+                Ubuntu's Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Ubuntu tools. The configuration system is
+                <b>fully documented in
+                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
+                package was installed on this server.
+
+          </p>
+          <p>
+                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+          </p>
+          <pre>
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          </pre>
+          <ul>
+                        <li>
+                           <tt>apache2.conf</tt> is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        </li>
+
+                        <li>
+                           <tt>ports.conf</tt> is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        </li>
+
+                        <li>
+                           Configuration files in the <tt>mods-enabled/</tt>,
+                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        </li>
+
+                        <li>
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           <tt>
+                                a2enmod,
+                                a2dismod,
+                           </tt>
+                           <tt>
+                                a2ensite,
+                                a2dissite,
+                            </tt>
+                                and
+                           <tt>
+                                a2enconf,
+                                a2disconf
+                           </tt>. See their respective man pages for detailed information.
+                        </li>
+
+                        <li>
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
+                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+                           default configuration.
+                        </li>
+          </ul>
+        </div>
+
+        <div class="section_header">
+            <div id="docroot"></div>
+                Document Roots
+        </div>
+
+        <div class="content_section_text">
+            <p>
+                By default, Ubuntu does not allow access through the web browser to
+                <em>any</em> file apart of those located in <tt>/var/www</tt>,
+                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
+                directories (when enabled) and <tt>/usr/share</tt> (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
+                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+            </p>
+            <p>
+                The default Ubuntu document root is <tt>/var/www/html</tt>. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            </p>
+        </div>
+
+        <div class="section_header">
+          <div id="bugs"></div>
+                Reporting Problems
+        </div>
+        <div class="content_section_text">
+          <p>
+                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
+                Apache2 package with Ubuntu. However, check <a
+                href="https://bugs.launchpad.net/ubuntu/+source/apache2"
+                rel="nofollow">existing bug reports</a> before reporting a new bug.
+          </p>
+          <p>
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          </p>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <div class="validator">
+    </div>
+  </body>
+</html>
+
+[?2004h]0;schiller@schiller-virtual-machine: ~/Desktop/codeby/codeby-devops/lesson6[01;32mschiller@schiller-virtual-machine[00m:[01;34m~/Desktop/codeby/codeby-devops/lesson6[00m$ exit
+[?2004lexit
+
+Script done on 2024-07-22 07:19:15+00:00 [COMMAND_EXIT_CODE="0"]
