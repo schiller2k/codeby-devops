@@ -65,4 +65,3 @@ sudo sed -i 's/remote my-server-1 1194/remote 192.168.56.34 1194/' $CLIENT/clien
 sudo sed -i 's/#comp-lzo/comp-lzo/' $CLIENT/client.conf
 
 cp -r $CLIENT /vagrant
-
