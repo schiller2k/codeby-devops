@@ -1,0 +1,19 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config| 
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+    server.vm.box = "ubuntu/focal64"
+    server.vm.network "private_network", ip: "192.168.56.33"
+    server.vm.provision "shell", path: "server.sh"
+  end
+  
+  config.vm.define "store" do |client|
+    client.vm.hostname = "store"
+    client.vm.box = "ubuntu/focal64"
+    client.vm.network "private_network", ip: "192.168.56.34"
+    client.vm.provision "shell", path: "store.sh"
+  end
+end
+
